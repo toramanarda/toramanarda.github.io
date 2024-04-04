@@ -1,0 +1,55 @@
+.container{
+  width: 924px;
+  height: 378px;
+  background-color: #E6F0FF;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title h1{
+  width: 447px;
+  height: 96px;
+  padding-left: 96px;
+  text-align: left;
+  color:#212121;
+  font-size: 40px;
+  line-height: 48px;
+
+}
+.title h5{
+  width: 190px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 68px;
+  padding-left: 96px;
+  text-align: left;
+  color:#212121;
+}
+.button{
+  width: 136px;
+  height: 32px;
+  color: #ffff;
+}
+.kutu{
+  width: 214px;
+  height: 30px;
+  border-radius: 32px;
+  gap: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color:#0D6EFD;
+  margin-left: 96px;
+  margin-top: 24px;
+
+}
+.kutu a{
+  text-decoration: none;
+}
+.photo{
+  width: 368.5px;
+  height: 313px;
+  margin-left: 570px;
+  margin-top: -250px;
+}

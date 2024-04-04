@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  margin-inline: auto ;
+ text-decoration: none;
+}
+.container {
+  width: 1440px;
+}
+
+.kutu img {
+  float: right;
+  margin-bottom: 20px;
+}
+
+.kutu h2 {
+  font-size: 60px;
+  width: 700px;
+  margin-left: 200px;
+  padding-left: 150px;
+  padding-top: 100px; 
+}
+
+.kutu p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 445px;
+  font-size: 20px;
+  margin-left: 350px;
+}
+
+img.b {
+  vertical-align: middle;
+  margin-top: -8px;
+  margin-left: 15px;
+  
+}
+.text-money{
+  margin-left: 350px;
+  font-size:50px ;
+}
+
+.text  h2 {
+  width: 100px;
+  margin-left: 318px;
+}
+
+
+.button {
+  width: 150px;
+  margin-left: 350px; 
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 3px;
+  font-size: 30px;
+  color: white;
+  background-color:  #0D6EFD;
+  border-radius: 3px;
+  text-align: center;
+ 
+}
+.button a {
+  color: white;
+}
