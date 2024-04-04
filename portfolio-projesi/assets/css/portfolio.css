@@ -1,0 +1,102 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.headerBtn{
+  display: flex;
+  justify-content: right;
+}
+.headerdiv{
+  width: 874px;
+  margin-left: 155px; 
+  margin-top: 120px;
+}
+.buyukYazi{
+  font-size: 60px;
+  line-height: 70px;
+}
+.socialMedia{
+  display: flex;
+  gap: 36px;
+  margin-top: 44px;
+}
+.boxlar{
+  margin-left: 165px;
+  margin-top: 170px;
+}
+.boxlar h3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.box1{
+  border: 1px solid gray;
+  width: 1110px;
+  border-radius: 8px;
+  padding: 24px;
+}
+.box1Text p{
+  width: 669px;
+  padding-top: 8px;
+  line-height: 28px;
+}
+.wiewBtn{
+  margin-top: 64px;                                 
+}
+.box2{
+  border: 1px solid gray;
+  width: 1110px;
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 80px;
+}
+.box3{
+  border: 1px solid gray;
+  width: 1110px;
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 80px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+.box4 {
+  width: 1440px;
+  height: 609px;
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 80px;
+}
+
+.atext {
+  width: 105px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #212121;
+}
+
+.htext {
+  width: 596px;
+  height: 192px;
+  font-weight: 600;
+  size: 40px;
+  line-height: 48px;
+}
+
+.htextm {
+  color: #0d6dfd;
+}
+
+.copyright {
+  width: 150px;
+  height: 24px;
+  top: 4042;
+  left: 165px;
+  font-weight: 400;
+  size: 14px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}

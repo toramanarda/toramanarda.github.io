@@ -1,0 +1,67 @@
+* {
+  margin-inline: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 1440px;
+  height: 1024px;
+}
+
+.image {
+  margin-top: -900px;
+  margin-left: 537px
+}
+
+.big {
+  margin-top: -810px;
+  margin-left: 190px;
+  width: 517px;
+  font-weight: 700px;
+  font-size: 140px;
+  line-height: 127px;
+  color: white;
+}
+
+.text {
+  margin-left: 190px;
+  margin-top: -60px;
+  width: 517px;
+  height: 101px;
+  font-weight: 700px;
+  font-size: 28px;
+  line-height: 34px;
+  color: white;
+}
+
+.button {
+  margin-top: 35px;
+  margin-left: 190px;
+}
+
+.box {
+  margin-top: 40px;
+  margin-left: 190px;
+}
+
+.text2 {
+  width: 69px;
+  height: 21px;
+  margin-top: -45px;
+  margin-left: 260px;
+  font-weight: 400px;
+  font-size: 12px;
+  line-height: 21px;
+  color: white;
+}
+
+.text3 {
+  width: 49px;
+  height: 24px;
+  margin-top: -20px;
+  margin-left: 260px;
+  font-weight: 700px;
+  font-size: 10px;
+  line-height: 24px;
+  color: white;
+}

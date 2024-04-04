@@ -1,0 +1,108 @@
+* {
+  margin-inline: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ECF2F8;
+}
+
+.container {
+  width: 327px;
+  height: 500px;
+  margin-top: 218.5px;
+  margin-left: 628px;
+  margin-right: 528px;
+  margin-bottom: 219.5px;
+  border-radius: 20px;
+  background-color: #ffff;
+}
+
+.container img {
+display: block;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+}
+
+.title-learning {
+  width: 82px;
+  height: 29px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin: 24px;
+  margin-top: 5px;
+  gap: 8px;
+  font-weight: 800px;
+  background-color: #f4d04e;
+}
+
+.title-learning h5 {
+  margin-top: 6px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 4px;
+}
+
+.published {
+  margin-right: 30px;
+  width: 245px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #111111;
+  background-color: #ffff;
+  margin: 12px;
+}
+
+.published p {
+  margin-top: 36px;
+  margin-left: 25px;
+  width: 263px;
+  height: 102px;
+  line-height: 25px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #48556A;
+}
+
+.text {
+  width: 263px;
+  height: 100px;
+  line-height: 20px;
+  margin-left: 35px;
+  margin-top: -22px;
+  font-weight: 500px;
+  color: #6E8098;
+}
+
+.kutu a {
+  width: 336px;
+  height: 36px;
+  margin: 12px;
+  line-height: 36px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #111111;
+}
+
+.kutu a:hover {
+  color: #f4d04e;
+}
+
+.article {
+  width: 336px;
+  height: 72px;
+  color: #7e7e7e;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 12px;
+}
+
+.user {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.usertext {
+  margin-top: -50px;
+  margin-left: 70px;
+}

@@ -1,0 +1,61 @@
+*{
+  padding: 0;
+  padding: 0;
+  margin-inline: auto;
+  text-decoration: none;
+}
+
+.container {
+  width: 1440px;
+  height: 1024px;
+  background-color: #05285b;
+}
+
+.defter img{
+  width: 700px;
+  float: right;
+  margin-top: 150px;
+
+}
+
+
+.header h2 {
+  width: 500px;
+  padding-top: 250px;
+  margin-left: 168px;
+  font-size: 60px;
+  color: white;
+}
+
+.header p {
+  margin-top: 32px;
+  margin-left: 168px;
+  width: 500px;
+  font-weight: 400px;
+  font-size: 30px;
+  color: white;
+  padding-right: 900px;
+}
+
+.kutu h3 {
+  width: 200px;
+  margin: 10px;
+  padding: 16px;
+  margin-left: 165px;
+  text-align: center;
+  color: white;
+  background-color: #DC3545;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Calendar {
+  display: flex;
+  color: white;
+}
+.Calendar p{
+  padding-top: 10px;
+  margin-right: 450px;
+}
+img.b{
+  vertical-align: middle;
+}
