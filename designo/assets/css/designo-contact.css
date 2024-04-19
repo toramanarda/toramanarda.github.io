@@ -1,0 +1,255 @@
+* {
+  margin: 0 ;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+
+.container{
+  width: 1110px;
+  margin:0 auto;
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 65px 0;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333136;
+}
+
+.nav :hover{
+  text-decoration: underline;
+
+}
+
+ul {
+  list-style: none;
+}
+
+.hero{
+  background-image: url(/designo/assets/img/contactus-hero.svg);
+  width: 1111px;
+  height: 480px;
+  margin-bottom: 160px;
+  
+}
+
+.hero-content{
+  width: 540px;
+  color: #FFFFFF;
+  padding-left: 90px;
+  padding-top: 100px;
+
+}
+
+h2{
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 15px;
+
+}
+
+.content p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.submit-button{
+ width: 152px;
+ height: 56px;
+ background-color: #FFFFFF;
+ align-content: center;
+ text-align: center;
+ margin-left: 863px;
+ margin-top: 90px;
+ border-radius: 15px;
+}
+
+.submit-button a{
+  text-decoration: none;
+  color: #333136; 
+}
+
+.submit-button:hover {
+  background-color: #FFAD9B;
+  border-radius: 16px;
+}
+
+.submit-button:hover a {
+  color: #FFFFFF;
+}
+
+
+.locations {
+  width: 1111px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+
+
+.locations a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+
+.canada {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.canada p {
+  width: 152px;
+  background-color: #E7816B;
+  color: #fff;
+  padding: 18px;
+  border-radius: 16px;
+}
+
+.buttonca{
+  margin-top: 25px;
+  margin-left: 22px;
+}
+
+
+.australia {
+  text-align: center;
+  margin-top: -5px;
+
+}
+
+.australia p {
+  width: 152px;
+  background-color: #E7816B;
+  color: #fff;
+  padding: 18px;
+  margin-top: 2px;
+  border-radius: 16px;
+  margin-top: 32px;
+
+}
+
+.buttonca :hover{
+  background-color: #FFAD9B;
+  color: #FFFFFF;
+}
+
+.buttonaus {
+  margin-top: 25px;
+  margin-left: 22px;
+}
+
+.buttonaus :hover{
+  background-color: #FFAD9B;
+  color: #FFFFFF;
+
+}
+
+.buttonuk {
+  margin-top: 25px;
+  margin-left: 22px;
+}
+
+.buttonuk :hover{
+  background-color: #FFAD9B;
+  color: #FFFFFF;
+}
+
+.uk {
+  text-align: center;
+  margin-bottom: 60px;
+
+}
+
+.uk p {
+  width: 152px;
+  background-color: #E7816B;
+  color: #fff;
+  padding: 18px;
+  margin-top: 2px;
+  border-radius: 16px;
+  margin-top: 32px;
+
+}
+
+.footer-container{
+  position: relative;
+  top: -50px;
+  width: 1300px;
+  margin-left: -90px;
+  background-color: #1D1C1E;
+}
+
+.footer img{
+  padding-top: 100px;
+  padding-left: 100px;
+  
+
+}
+
+.footer{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+}
+
+
+.footer-nav{
+  display: flex;
+  gap: 10px;
+  padding-right: 100px;
+  padding-top: 100px;
+
+}
+
+.footer-nav a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.footer-nav :hover{
+  text-decoration: underline;
+}
+
+.border{
+  border: 1px solid #FFFFFF;
+  width: 1110px;
+  margin-left: 93px;
+  margin-bottom: 30px;
+}
+
+.footer-contact{
+  width: 1111px;
+  color: #c4cdd6;
+  display: flex;
+  margin-left: 99px;
+  justify-content: space-between;
+}
+.icons{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 72px;
+}
+
+.icons a :hover {
+  opacity: 20%;
+}
+

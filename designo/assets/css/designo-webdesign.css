@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 65px 0;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333136;
+}
+
+.nav :hover{
+  text-decoration: underline;
+
+}
+
+ul {
+  list-style: none;
+}
+
+
+.hero {
+  background-image: url(/designo/assets/img/graphicd-bckgrnd.png);
+  height: 252px;
+  margin-bottom: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.hero-content {
+  width: 540px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.hero-content h1 {
+  text-align: center;
+  line-height: 48px;
+  font-weight: 500px;
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.hero-img {
+  height: 573px;
+  margin-bottom: 30px;
+}
+
+.projects {
+  width: 1130px;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 52px;
+
+}
+
+.card {
+  width: 349px;
+  background-color: #FDF3F0;
+  height: 478px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin-bottom: 160px;
+}
+
+.card:hover {
+  background-color: #E7816B;
+}
+
+.card:hover h2 {
+  color: #FFFFFF;
+}
+
+.card:hover p {
+  color: #FFFFFF;
+
+}
+
+.card h2 {
+  color: #E7816B;
+  font-weight: 500px;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.card p {
+  width: 286px;
+  margin-top: 16px;
+  margin-left: 30px;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #333136;
+}
+
+.services {
+  width: 1130px;
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  margin-bottom: 160px;
+  padding: 0px 30px;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.services-text {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.services-text h3,
+.services-text p {
+  margin-left: -550px;
+}
+
+.services-text img {
+  vertical-align: middle;
+}
+
+.services-text a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.section {
+  background-image: url(/designo/assets/img/getintouch-bckgrnd.svg);
+  width: 90%;
+  max-width: 1111px;
+  height: 292px;
+  color: #FFFFFF;
+  align-content: center;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.section h2 {
+  margin-top: -50px;
+  line-height: 40px;
+  font-weight: 500;
+  font-size: 40px;
+  margin-left: 95px;
+}
+
+.section p {
+  width: 459px;
+  margin-top: 30px;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 16px;
+  margin-left: 95px;
+}
+
+.contact-box {
+  margin-top: -150px;
+  margin-left: 750px;
+  width: 152px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+
+}
+
+.contact-box:hover {
+  background-color: #FFAD9B;
+  border-radius: 16px;
+}
+
+.contact-box:hover a {
+  color: #FFFFFF;
+}
+
+
+.contact-button {
+  padding: 17px 19px;
+  text-align: center;
+}
+
+.contact-button:hover{
+  background-color: #FFAD9B;
+  color: #FFFFFF;
+}
+
+.contact-button a {
+  text-decoration: none;
+  color: #000;
+
+
+}
+.footer-container {
+  position: relative;
+  top: -50px;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #1D1C1E;
+  z-index: 1;
+}
+
+.footer img {
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+.footer {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 10px;
+  padding-right: 100px;
+  padding-top: 100px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer-nav:hover a {
+  text-decoration: underline;
+}
+
+.border {
+  border: 1px solid #FFFFFF;
+  width: 1110px;
+  margin-left: 93px;
+  margin-bottom: 30px;
+}
+
+.footer-contact {
+  width: 1111px;
+  color: #c4cdd6;
+  display: flex;
+  margin-left: 99px;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 72px;
+}
+
+.icons a:hover {
+  opacity: 0.2;
+}
