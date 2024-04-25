@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+.header {
+  margin: auto;
+  width: 1110px;
+  display: flex;
+  padding: 55px;
+  justify-content: space-between;
+}
+
+.header a {
+  text-decoration: none;
+  background-color: #E8EFF2;
+  color: #162542;
+  text-align: center;
+  padding: 16px 26px;
+  width: 175px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 10px;
+}
+
+.header a:hover {
+  background-color: #162542;
+  color: #ffffff;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-areas: 'left-side side-bar'
+                       'left-side side-bar';
+}
+
+.content content-leftside {
+  grid-area: left-side;
+  
+}
+
+.content content-sidebar {
+  grid-area: side-bar;
+}
+
+
+.content {
+  padding-bottom: 23px;
+  margin-left: 55px;
+  width: 445px;
+}
+
+.content h1 {
+  padding-top: 60px;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 56px;
+}
+
+.content h5 {
+  padding-top: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.content-text {
+  display: flex;
+}
+
+.content-text {
+  padding-top: 40px;
+}
+
+.content-text a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+    background-color: #F16718;
+    color: #ffffff;
+    width: 175px;
+    text-align: center;
+    padding: 16px 10px;
+    border-radius: 10px;
+}
+
+.content-text a:hover {
+  background-color: #FF9B62;
+}
+
+.content-text p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7B8BAD;
+  padding-left: 40px;
+  padding-top: 13px;
+}
+
+.content-hero {
+  display: grid;
+  grid-template-areas: 'left-side left-side side-bar';
+}
+
+
+.content content-images-leftsidebar {
+  grid-area: left-side;
+}
+
+.content content-images-text-sidebar {
+  grid-area: side-bar;
+}
+
+.content-images-text {
+  padding-top: 112px;
+  padding-left: 105px;
+  width: 255px;
+}
+
+.content-images-text h1 {
+  padding-bottom: 27px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #162542;
+}
+
+.content-images-text p {
+  width: 255px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7B8BAD;
+}
+
+.image {
+  margin-left: 30px;
+}
+
+.information {
+  gap: 30px;
+  padding-top: 168px;
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.information img {
+  padding-bottom: 48px;
+}
+
+.information h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  color: #162542;
+  padding-bottom: 24px;
+}
+
+.information p {
+  width: 255px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7B8BAD;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 128px;
+  padding-bottom: 39px;
+}
+
+.footer a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7B8BAD;
+}

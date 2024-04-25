@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 0;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav a{
+  text-decoration: none;
+  color: #333136;
+}
+
+.nav :hover {
+  color: #F15D51;
+}
+
+ul {
+  list-style: none;
+}
+
+.hero {
+  display: grid;
+  grid-template-areas: 'left-side side-bar'
+                       'left-side side-bar';
+}
+
+.content-text {
+  padding: 28px 1px;
+  width: 730px;
+  display: flex;
+  gap: 30px;
+}
+
+.content-first {
+  width: 350px;
+  font-weight: 800px;
+  font-size: 45px;
+  line-height: 56px;
+}
+
+
+.content-second {
+  width: 350px;
+  font-weight: 400px;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.content-second p {
+  margin-bottom: 60px;
+  color: #5E607A;
+}
+
+.content-second a {
+  background-color: #F15D51;
+  border: 1px solid ;
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: white;
+  padding: 13px 31px;
+}
+
+.content-second a:hover {
+  background-color: #00001A;
+  color: #FFFDFA;
+}
+
+.content content-leftside {
+  grid-area: left-side;
+}
+
+.content content-sidebar {
+  grid-area: side-bar;
+}
+
+.content-card {
+  width: 350px;
+  background-color: black;
+  padding: 8px 24px;
+}
+
+.content-card h2 {
+  color: #E9AA52;
+  font-weight: 700px;
+  font-size: 40px;
+  line-height: 40px;
+  padding: 24px 1px;
+}
+
+.content-card h3 :hover {
+  color: #E9AA52;
+}
+
+.content-card a {
+  color: #FFFDFA;
+  font-weight: 800px;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.content-card h3 {
+  padding-top: 24px;
+}
+
+.content-card p {
+  font-weight: 400px;
+  font-size: 15px;
+  line-height: 26px;
+  color: #C5C6CE;
+  padding-top: 8px;
+  padding-bottom: 21px;
+} 
+
+.categories {
+  display: flex;
+  padding-top: 71px;
+  padding-bottom: 129px;
+}
+
+.categories-text {
+  padding-left: 24px;
+}
+
+.categories-text h1 {
+  font-weight: 700px;
+  font-size: 32px;
+  line-height: 32px;
+  color: #C5C6CE;
+  padding-bottom: 12px;
+}
+
+.categories-text a {
+  font-weight: 800px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #00001A;
+  padding-bottom: 9px;
+  text-decoration: none;
+  
+}
+
+.categories-text a:hover {
+  color: #F15D51;
+}
+
+.categories-text p {
+  font-weight: 400px;
+  font-size: 15px;
+  line-height: 26px;
+  color: #5E607A;
+}
