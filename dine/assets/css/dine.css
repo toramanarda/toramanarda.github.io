@@ -1,0 +1,1046 @@
+:root {
+  --primary-color: #9E7F66;
+  --primary-color-dark: #111111;
+  --secondary-color: #17192B;
+  --secondary-color-dark: #242B37;
+  --secondary-color-light-dark: #5C6779;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "League Spartan", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 80px
+}
+
+
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+
+}
+
+
+h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+  padding: 25px 48px;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+/* header start */
+
+.header {
+  width: 375px;
+  background-size: 160%;
+  background-position-y: -80%;
+  background-position-x: 47%;
+  background-repeat: no-repeat;
+  background-color: #111111;
+}
+
+.header-content {
+  padding-top: 232px;
+  margin-inline: 24px;
+  text-align: center;
+}
+
+.header-content img {
+  text-align: center;
+  padding-bottom: 36px;
+  padding-inline: 122px;
+}
+
+.header-content h1 {
+  width: 327px;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 21px;
+  color: #ffffff;
+}
+
+.header-content p {
+  width: 327px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 53PX;
+  color: #ffffff;
+}
+
+.header-content {
+  padding-bottom: 152px;
+}
+
+.header-btn {
+  border: 1px solid white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+/* header end */
+
+/* information start */
+
+.information {
+  margin: auto;
+  width: 327px;
+  position: relative;
+  top: -50px;
+}
+
+.chef-foto-tablet,
+.chef-foto-desktop {
+  display: none;
+}
+
+.information-text {
+  width: 327px;
+  padding-top: 48px;
+  margin-bottom: 101px;
+  text-align: center;
+}
+
+.information-text h2 {
+  width: 327px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 13px;
+}
+
+.information-text img {
+  margin: 0 auto;
+  padding-bottom: 36px;
+}
+
+.chef-foto-mobile {
+  margin: auto;
+  width: 327px;
+  filter: drop-shadow(gray 1px  20px 40px);
+}
+
+.place-tablet,
+.place-desktop {
+  display: none;
+}
+
+.place-mobile {
+  filter: drop-shadow(gray 1px  20px 40px);
+}
+
+.information-next-text {
+  margin: auto;
+  width: 327px;
+  padding-top: 48px;
+  margin-bottom: 101px;
+  text-align: center;
+}
+
+.information-next-text h2 {
+  width: 327px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 13px;
+}
+
+.information-next-text p {
+  width: 327px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.information-next-text img {
+  margin: 0 auto;
+  padding-bottom: 36px;
+}
+
+/* information end */
+
+/* menu start */
+
+.menu {
+  width: 375px;
+  background-color: #111111;
+}
+
+.menu-text {
+  width: 327px;
+  padding-top: 72px;
+  padding-bottom: 85px;
+  margin-inline: 24px;
+  text-align: center;
+}
+
+.menu-text img {
+  margin: 0 auto;
+  padding-bottom: 36px;
+}
+
+.menu-text h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  padding-bottom: 13px;
+  color: #ffffff;
+}
+
+.menu-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.menu-content {
+  padding-inline: 24px;
+}
+
+.menu img {
+  padding-bottom: 36px;
+}
+
+.menu-content-text {
+  text-align: center;
+  width: 327px;
+}
+
+.menu-content-text h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-bottom: 6px;
+}
+
+.menu-content-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 28px;
+  color: #ffffff;
+}
+
+hr {
+  margin: 0 auto;
+  width: 327px;
+  opacity: 15%;
+  margin-bottom: 24px;
+}
+
+.menu-content:last-child {
+  padding-bottom: 102px;
+}
+
+/* menu end */
+
+/* reservation start */
+
+.reservation {
+  width: 375px;
+  margin: 0 auto;
+  background-size: 250%;
+  background-position-y: 50%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+}
+
+.reservation-content {
+  width: 327px;
+  padding-top: 84px;
+  padding-bottom: 80px;
+  margin-inline: 24px;
+  text-align: center;
+}
+
+.reservation-content h2 {
+  width: 327px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  padding-bottom: 40px;
+  color: #ffffff;
+}
+
+.reservation-btn {
+  border: 1px solid white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+/* reservation end */
+
+/* footer start */
+
+.footer {
+  width: 375px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #111111;
+}
+
+.footer-content {
+  width: 327px;
+  padding: 80px 24px;
+}
+
+.footer-content img {
+  margin: 0 auto;
+  padding-bottom: 42px;
+  margin-inline: 110px;
+}
+
+.footer-content-text {
+  width: 327px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.first-contact {
+  padding-bottom: 32px;
+}
+
+/* footer end */
+
+/* tablet start */
+
+@media(width >=768px) {
+
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  /* header start */
+
+  .header {
+    width: 768px;
+    background-size: 120%;
+    background-position-y: -200%;
+    background-position-x: 47%;
+    background-repeat: no-repeat;
+    background-color: #111111;
+  }
+
+  .header-content {
+    margin-inline: 40px;
+    padding-bottom: 216px;
+    text-align: center;
+  }
+
+  .header-content img {
+    text-align: center;
+    padding-bottom: 38px;
+    padding-inline: 288px;
+  }
+
+  .header-content h1 {
+    width: 689px;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  .header-content p {
+    margin: 0 auto;
+    width: 573px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 52px;
+    color: #ffffff;
+  }
+
+  .header-btn {
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+
+  /* header end */
+
+  /* information start */
+
+  .information {
+    margin: auto;
+    width: 573px;
+    position: relative;
+    top: -50px;
+  }
+
+  .place-mobile,
+  .place-desktop {
+    display: none;
+  }
+
+  .place-tablet {
+    display: block;
+    filter: drop-shadow(gray 0px 20px 40px);
+  }
+
+  .information-text {
+    margin: 0 auto;
+    width: 457px;
+    padding-top: 48px;
+    margin-bottom: 118px;
+    text-align: center;
+  }
+
+  .information-text h2 {
+    width: 457px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 27px;
+  }
+
+  .information-text p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .information-text img {
+    margin: 0 auto;
+    padding-bottom: 36px;
+  }
+
+  .chef-foto-tablet {
+    margin: 0 auto;
+  }
+
+  .chef-foto-mobile,
+  .chef-foto-desktop {
+    display: none;
+  }
+
+  .chef-foto-tablet {
+    display: block;
+    z-index: 2;
+  }
+
+  .information-next-text {
+    margin: auto;
+    width: 457px;
+    padding-top: 56px;
+    margin-bottom: 118px;
+    text-align: center;
+  }
+
+  .information-next-text h2 {
+    width: 457px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 27px;
+  }
+
+  .information-next-text p {
+    width: 457px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .information-next-text img {
+    margin: 0 auto;
+    padding-bottom: 36px;
+  }
+
+  /* information end */
+
+  /* menu start */
+
+  .menu {
+    width: 768px;
+    background-color: #111111;
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu-text {
+    width: 445px;
+    padding-top: 96px;
+    padding-bottom: 54px;
+    margin-inline: 161px;
+    text-align: center;
+  }
+
+  .menu-text img {
+    margin: 0 auto;
+    padding-bottom: 39px;
+  }
+
+  .menu-text h2 {
+    width: 445px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    padding-bottom: 27px;
+    color: #ffffff;
+  }
+
+  .menu-text p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+
+  .menu-content {
+    display: flex;
+    padding-inline: 97px;
+  }
+
+  .menu img {
+    width: 128px;
+    padding-bottom: 24px;
+  }
+
+  .menu-content-text {
+    text-align: start;
+    width: 383px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    padding-left: 62px;
+  }
+
+  .menu-content-text h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    padding-bottom: 6px;
+  }
+
+  .menu-content-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 28px;
+    color: #ffffff;
+  }
+
+  hr {
+    margin: 0 auto;
+    width: 573px;
+    opacity: 15%;
+    margin-bottom: 32px;
+  }
+
+  .menu-content:last-child {
+    padding-bottom: 102px;
+  }
+
+  /* menu end */
+
+  /* reservation start */
+
+  .reservation {
+    width: 768px;
+    margin: 0 auto;
+    background-size: 130%;
+    background-position-y: 50%;
+    background-position-x: 90%;
+    background-repeat: no-repeat;
+  }
+
+  .reservation-content {
+    width: 615px;
+    padding-top: 72px;
+    padding-bottom: 64px;
+    padding-left: 40px;
+    text-align: center;
+  }
+
+  .reservation-content h2 {
+    width: 630px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    padding-bottom: 40px;
+    color: #ffffff;
+  }
+
+  .reservation-btn {
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+
+  /* reservation end */
+
+  /* footer start */
+
+  .footer {
+    width: 768px;
+    margin: 0 auto;
+    text-align: start;
+    background-color: #111111;
+  }
+
+  .footer-content {
+    display: flex;
+    width: 689px;
+    padding: 62px 40px;
+  }
+
+  .footer-content img {
+    margin: 0 auto;
+    margin-top: -100px;
+  }
+
+  .footer-content-text {
+    padding-left: 130px;
+    width: 456px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+
+  .first-contact {
+    padding-bottom: 32px;
+  }
+
+  /* footer end */
+}
+
+/* tablet end */
+
+/* desktop start */
+
+@media(width >=1110px) {
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* header start */
+
+  .header {
+    width: 1440px;
+    background-size: 90%;
+    background-position-y: 1%;
+    background-position-x: 351%;
+    background-repeat: no-repeat;
+    background-color: #111111;
+  }
+
+  .header-content {
+    width: 507px;
+    padding-left: 165px;
+    padding-bottom: 216px;
+    text-align: start;
+  }
+
+  .header-content img {
+    padding-bottom: 36px;
+    padding-inline: 122px;
+    position: relative;
+    top: -150px;
+    right: 120px;
+  }
+
+  .header-content h1 {
+    width: 508px;
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 80px;
+    padding-bottom: 10px;
+    color: #ffffff;
+  }
+
+  .header-content p {
+    margin: 0 auto;
+    width: 445px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 40px;
+    color: #ffffff;
+  }
+
+  .header-btn {
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+
+  /* header end */
+
+  /* information start */
+
+  .information {
+    margin: auto;
+    position: relative;
+    top: -50px;
+    display: flex;
+    margin-left: 200px;
+    padding-bottom: 60px;
+  }
+
+  .place-mobile,
+  .place-tablet {
+    display: none;
+  }
+
+  .place-desktop {
+    display: block;
+    filter: drop-shadow(gray 1px  20px 40px);
+  }
+
+  .information-text {
+    margin: 0 auto;
+    width: 457px;
+    padding-top: 247px;
+    margin-bottom: 198px;
+    padding-left: 125px;
+    text-align: start;
+  }
+
+  .information-text h2 {
+    width: 445px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 27px;
+  }
+
+  .information-text p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .information-text img {
+    margin-right: 300px;
+    padding-bottom: 55px;
+  }
+
+  .chef-foto-tablet {
+    margin: 0 auto;
+  }
+
+  .chef-foto-mobile,
+  .chef-foto-tablet {
+    display: none;
+  }
+
+  .chef-foto-desktop {
+    display: block;
+    width: 540px;
+  }
+
+  .information-next {
+    margin: auto;
+    top: -50px;
+    display: flex;
+    margin-left: 200px;
+    padding-bottom: 121px;
+  }
+
+  .chef-foto-desktop {
+    margin-left: 570px;
+  }
+
+  .information-next-text {
+    margin: auto;
+    text-align: start;
+    position: relative;
+    top: -50px;
+    margin-left: -1100px;
+  }
+
+  .information-next-text h2 {
+    width: 457px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 27px;
+  }
+
+  .information-next-text p {
+    width: 457px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .information-next-text img {
+    margin-right: 400px;
+    padding-bottom: 36px;
+  }
+
+  /* information end */
+
+  /* menu start */
+
+  .menu {
+    width: 1440px;
+    background-color: #111111;
+    display: flex;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 300px;
+    padding-left: 125px;
+  }
+
+  .menu-text {
+    width: 445px;
+    padding-top: 262px;
+    padding-bottom: 286px;
+    margin-inline: 0;
+    padding-left: 165px;
+    text-align: start;
+  }
+
+  .menu-text img {
+    margin-right: 320px;
+    padding-bottom: 39px;
+  }
+
+  .menu-text h2 {
+    width: 445px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    padding-top: 55px;
+    padding-bottom: 27px;
+    color: #ffffff;
+  }
+
+  .menu-text p {
+    width: 445px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+
+  .menu img {
+    width: 128px;
+    padding-bottom: 24px;
+  }
+
+  .menu-content-text {
+    text-align: start;
+    width: 383px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    padding-left: 62px;
+  }
+
+  .menu-content {
+    display: flex;
+    padding-inline: 0;
+    padding-left: 125px;
+  }
+
+  .menu-content-text h2 {
+    width: 350px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    padding-bottom: 6px;
+  }
+
+  .menu-content-text p {
+    width: 350px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 28px;
+    color: #ffffff;
+  }
+
+  hr {
+    margin: 0 auto;
+    width: 540px;
+    opacity: 15%;
+    margin-bottom: 32px;
+    margin-left: 120px;
+  }
+
+  .menu-content:last-child {
+    padding-bottom: 102px;
+  }
+
+  /* menu end */
+
+  /* reservation start */
+
+  .reservation {
+    width: 1440px;
+    margin: 0 auto;
+    background-size: 130%;
+    background-position-y: 50%;
+    background-position-x: 75%;
+    background-repeat: no-repeat;
+  }
+
+  .reservation-content {
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    gap: 250px;
+  }
+
+  .reservation-content h2 {
+    margin: 0 auto;
+    width: 635px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    padding-block: 40px;
+    color: #ffffff;
+  }
+
+  .reservation-btn {
+    border: 1px solid white;
+    text-decoration: none;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 16px;
+    letter-spacing: 2.5px;
+    margin-right: 140px;
+    color: #ffffff;
+  }
+
+  /* reservation end */
+
+  /* footer start */
+
+  .footer {
+    width: 1440px;
+    margin: 0 auto;
+    text-align: start;
+    background-color: #111111;
+  }
+
+  .footer-content {
+    display: flex;
+    width: 1110px;
+    padding-inline: 165px;
+    padding-top: 80px;
+  }
+
+  .footer-content img {
+    margin: 0 auto;
+  }
+
+  .footer-content-text {
+    padding-left: 130px;
+    width: 814px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    display: flex;
+    color: #ffffff;
+  }
+
+  .footer-content-text p {
+    width: 446px;
+  }
+
+  /* footer end */
+}
+
+/* desktop end */
