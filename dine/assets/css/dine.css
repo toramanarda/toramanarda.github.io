@@ -1021,23 +1021,14 @@ hr {
     padding-top: 80px;
   }
 
-  .footer-content img {
-    margin: 0 auto;
+.header-btn:hover {
+    background-color: white;
+    color: #111111;
   }
 
-  .footer-content-text {
-    padding-left: 130px;
-    width: 814px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
-    letter-spacing: 2px;
-    display: flex;
-    color: #ffffff;
-  }
-
-  .footer-content-text p {
-    width: 446px;
+  .reservation-btn:hover {
+    background-color: white;
+    color: #111111;
   }
 
   /* footer end */
