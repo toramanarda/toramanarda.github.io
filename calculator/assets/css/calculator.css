@@ -63,6 +63,23 @@ h6 {
   padding-bottom: 96px;
 }
 
+.theme-box a {
+  text-decoration: none;
+}
+
+.btn-index a {
+  color: white;
+}
+
+.btn-theme2 a {
+  color: #36362C;
+}
+
+.btn-theme3 a {
+  color: #00DED0;
+
+}
+
 .cal-header {
   width: 533px;
   display: flex;
@@ -333,17 +350,23 @@ body.theme-3 {
   box-shadow: 0px -4px 0px 0px #6CF9F1 inset;
 }
 
-.theme-area-Dred{
+.theme-area-Dred {
   width: 16px;
+  height: 16px;
   border: 10px solid #D03F2F;
   border-radius: 100px;
+  margin-left: -7px;
+
 }
+
+
 
 .theme-area-Cred {
   background-color: #D2CDCD;
   width: 16px;
   border: 10px solid #D03F2F;
   border-radius: 100px;
+  margin-left: 10px;
 }
 
 .theme-area-blue {
@@ -351,26 +374,27 @@ body.theme-3 {
   width: 16px;
   border: 10px solid #00DED0;
   border-radius: 100px;
+  margin-left: 30px;
 }
 
 
 /* Calculator Mobile Start */
 
-@Media (width <= 768px){
+@Media (width <=768px) {
   .container {
     width: 327px;
     margin: 0 auto;
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  
+
   .cal-header {
     width: 327px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 32px;
   }
-  
+
   .cal-header h2 {
     font-size: 32px;
     font-weight: 700;
@@ -378,17 +402,17 @@ body.theme-3 {
     letter-spacing: -0.5333333611488342px;
     text-align: center;
   }
-  
+
   .theme {
     display: flex;
     gap: 26px;
     align-items: center;
   }
-  
+
   .theme-box p {
     margin-top: -20px;
   }
-  
+
   .theme p {
     font-size: 12px;
     font-weight: 700;
@@ -397,27 +421,27 @@ body.theme-3 {
     text-align: center;
     padding-bottom: 5px;
   }
-  
+
   .theme-area {
     width: 71px;
     border-radius: 15px;
   }
-  
+
   .theme-area-red {
     width: 16px;
     border-radius: 100px;
   }
-  
+
   .cal-main {
     width: 327px;
   }
-  
+
   .cal-output {
     width: 327px;
     border-radius: 10px;
     margin-bottom: 24px;
   }
-  
+
   .cal-output-txt {
     width: 185px;
     font-size: 56px;
@@ -428,13 +452,13 @@ body.theme-3 {
     margin: 0px;
     margin-left: 155px;
   }
-  
+
   .cal-buttons-area {
     width: 327px;
     padding: 32px 30px;
     border-radius: 10px;
   }
-  
+
   .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -442,7 +466,7 @@ body.theme-3 {
     grid-column-gap: 13px;
     grid-row-gap: 13px;
   }
-  
+
   button {
     width: 60px;
     height: 60px;
@@ -451,7 +475,7 @@ body.theme-3 {
     background-color: #EAE3DC;
     box-shadow: 0px -4px 0px 0px #B3A497 inset;
   }
-  
+
   button p {
     font-size: 22px;
     font-weight: 700;
@@ -459,19 +483,19 @@ body.theme-3 {
     letter-spacing: -0.6666666865348816px;
     text-align: center;
   }
-  
+
   .last-buttons {
     display: flex;
     gap: 13px;
     padding-top: 24px;
   }
-  
+
   .reset-button {
     width: 227px;
     border-radius: 10px;
     color: #ffffff;
   }
-  
+
   .reset-button h3 {
     font-size: 28px;
     font-weight: 700;
@@ -480,13 +504,13 @@ body.theme-3 {
     text-align: center;
     padding: 13px 32px;
   }
-  
+
   .conclusion {
     width: 227px;
     border-radius: 10px;
     color: #ffffff;
   }
-  
+
   .conclusion h3 {
     font-size: 28px;
     font-weight: 700;
@@ -495,164 +519,169 @@ body.theme-3 {
     text-align: center;
     padding: 13px 32px;
   }
-  
+
   /* Theme 1 */
   body.theme-1 {
     background-color: #3A4663;
   }
-  
+
   .theme-1 .cal-header h2 {
     color: #ffffff;
   }
-  
+
   .theme-1 .theme-box p,
   .theme-1 .theme p {
     color: #ffffff;
   }
-  
+
   .theme-1 .theme-area {
     border: 15px solid #242D44;
   }
-  
+
   .theme-1 .cal-output {
     background-color: #181F33;
   }
-  
+
   .theme-1 .cal-output-txt {
     color: #ffffff;
-  
+
   }
-  
+
   .theme-1 .cal-buttons-area {
     background-color: #242D44;
   }
-  
+
   .theme-1 button p {
     color: #434A59;
   }
-  
+
   .theme-1 .reset-button {
     background-color: #647198;
     box-shadow: 0px -4px 0px 0px #414E73 inset;
   }
-  
+
   .theme-1 .conclusion {
     background-color: #D03F2F;
     box-shadow: 0px -4px 0px 0px #93261A inset;
   }
-  
+
   /* Theme 2 */
   body.theme-2 {
     background-color: #E6E6E6;
   }
-  
+
   .theme-2 .cal-header h2 {
     color: #000;
   }
-  
+
   .theme-2 .theme-box p,
   .theme-2 .theme p {
     color: #000;
   }
-  
+
   .theme-2 .theme-area {
     border: 15px solid #D2CDCD;
   }
-  
+
   .theme-2 .cal-output {
     background-color: #EEEEEE;
   }
-  
+
   .theme-2 .cal-output-txt {
     color: #000;
   }
-  
+
   .theme-2 .cal-buttons-area {
     background-color: #D2CDCD;
   }
-  
+
   .theme-2 button p {
     color: #36362C;
   }
-  
+
   .theme-2 .reset-button {
     background-color: #378187;
     box-shadow: 0px -4px 0px 0px #1B6066 inset;
   }
-  
+
   .theme-2 .conclusion {
     background-color: #C85402;
     box-shadow: 0px -4px 0px 0px #873901 inset;
   }
-  
+
   /* Theme 3 */
   body.theme-3 {
     background-color: #17062A;
   }
-  
+
   .theme-3 .cal-header h2 {
     color: #FFE53D;
   }
-  
+
   .theme-3 .theme-box p,
   .theme-3 .theme p {
     color: #FFE53D;
   }
-  
+
   .theme-3 .theme-area {
     border: 15px solid #1E0936;
   }
-  
+
   .theme-3 .cal-output {
     background-color: #1E0936;
   }
-  
+
   .theme-3 .cal-output-txt {
     color: #FFE53D;
   }
-  
+
   .theme-3 .cal-buttons-area {
     background-color: #1E0936;
   }
-  
+
   .theme-3 button {
     background-color: #331C4D;
     box-shadow: 0px -4px 0px 0px #881C9E inset;
   }
-  
+
   .theme-3 button p {
     color: #FFE53D;
   }
-  
+
   .theme-3 .reset-button {
     background-color: #56077C;
     box-shadow: 0px -4px 0px 0px #BE15F4 inset;
   }
-  
+
   .theme-3 .conclusion {
     background-color: #00DED0;
     box-shadow: 0px -4px 0px 0px #6CF9F1 inset;
   }
-  
-  .theme-area-Dred{
+
+  .theme-area-Dred {
     width: 16px;
     border: 10px solid #D03F2F;
     border-radius: 100px;
+    margin-left: -7px;
   }
-  
+
   .theme-area-Cred {
     background-color: #D2CDCD;
     width: 16px;
     border: 10px solid #D03F2F;
     border-radius: 100px;
+    margin-left: 10px;
+
   }
-  
+
   .theme-area-blue {
     background-color: #1E0936;
     width: 16px;
     border: 10px solid #00DED0;
     border-radius: 100px;
+    margin-left: 30px;
+
   }
-  
-  
+
+
 }
