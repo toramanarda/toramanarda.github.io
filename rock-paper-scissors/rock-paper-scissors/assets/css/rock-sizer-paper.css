@@ -1,0 +1,481 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: #1d3151;
+}
+
+/* MOBIL VERS START */
+/* index start */
+.container {
+  margin: 0 auto;
+}
+
+/* Header start */
+
+.header {
+  width: 311px;
+  display: flex;
+  margin: 0 auto;
+  padding-inline: 32px;
+  justify-content: space-between;
+  margin-top: 32px;
+  border: 3px solid #FFFFFF4A;
+  border-radius: 6px;
+  margin-bottom: 105px;
+}
+
+.header-content {
+  padding-top: 24px;
+}
+
+.header-content p {
+  width: 83px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: white;
+}
+
+.score-area {
+  padding-block: 12px;
+  margin-left: -12px;
+}
+
+.score-content {
+  text-align: center;
+  padding: 10px 22px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.score-content h4 {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 1.5625px;
+  text-align: center;
+  color: #2A45C2;
+}
+
+.score-content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  color: #565468;
+}
+
+/* Header end */
+/* game area start */
+
+.game-area {
+  margin: 0 auto;
+  margin-bottom: 140px;
+  width: 311px;
+}
+
+.paperScissors {
+  position: relative;
+  gap: 52px;
+  margin-inline: 32px;
+  margin-bottom: 15px;
+  z-index: 2;
+  margin: 0 auto;
+
+}
+
+.rock {
+  position: relative;
+  z-index: 2;
+  margin-left: 68px;
+
+}
+
+.triangle {
+  z-index: 1;
+  margin: 0 auto;
+  margin-top: -212px;
+
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* game area end */
+/* rules start */
+.rules {
+
+  margin-inline: 121px;
+  margin: 0 auto;
+  width: 130px;
+
+
+}
+
+.rules a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 36px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  border-radius: 10px;
+}
+
+/* rules end */
+/* index end */
+/* step2 start */
+.picked {
+  display: flex;
+  gap: 65px;
+  margin-bottom: 245px;
+
+}
+
+.picked img {
+  width: 98px;
+  text-align: center;
+
+}
+
+.picked p {
+  color: #fff;
+  font-weight: 700;
+
+}
+
+.picked-you p {
+  text-align: center;
+}
+
+.displayNone {
+  display: none;
+}
+
+
+/* step2 end */
+/* step3-win start */
+.resultPage-gameArea {
+  margin-bottom: 0;
+
+
+}
+
+.resultPage-picked {
+  margin-bottom: 62px;
+}
+
+.result {
+  text-align: center;
+  margin-bottom: 62px;
+
+}
+
+.result h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.again-btn {
+  text-decoration: none;
+  color: #000;
+  background-color: white;
+  padding: 14px 60px;
+  border-radius: 6px;
+  font-weight: 600;
+
+}
+
+.again-btn:hover {
+  color: red;
+}
+
+.result-desktop {
+  display: none;
+}
+
+
+
+/* mobile vers end */
+/* desktop vers start */
+@media (width >=1110px) {
+
+  /* index start */
+  .container {
+    margin: 0 auto;
+  }
+
+  .header {
+    width: 700px;
+    display: flex;
+    margin: 0 auto;
+    padding-inline: 32px;
+    justify-content: space-between;
+    margin-top: 48px;
+    border: 3px solid #FFFFFF4A;
+    border-radius: 6px;
+    margin-bottom: 64px;
+  }
+
+  .header-content {
+    padding-top: 24px;
+  }
+
+  .header-content p {
+    width: 83px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    color: white;
+
+  }
+
+  .score-area {
+    padding-block: 12px;
+    margin-left: -12px;
+  }
+
+  .score-content {
+    text-align: center;
+    padding: 10px 22px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .score-content h4 {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 1.5625px;
+    text-align: center;
+    color: #2A45C2;
+  }
+
+  .score-content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    color: #565468;
+  }
+
+  /* Header end */
+  /* game area start */
+
+  .game-area {
+    margin: 0 auto;
+    margin-bottom: 64px;
+    width: 476px;
+
+  }
+
+  .paperScissors {
+
+    gap: 52px;
+    margin-inline: 445px;
+    margin-bottom: 25px;
+    margin: 0 auto;
+
+  }
+
+  .rock {
+    margin-inline: 540px;
+    margin: 0 92px;
+
+  }
+
+  .triangle {
+    /* margin-top: -227px;
+    margin-left: 500px; */
+    margin: 0 auto;
+    margin-top: -225px;
+    margin-right: 208px;
+
+  }
+
+  /* game area end */
+  /* rules start */
+  .rules {
+    margin-inline-end: 32px;
+  }
+
+  .rules a:hover {
+    background-color: white;
+    color: #000;
+  }
+
+  /* rules end */
+  /* index end */
+
+  /* step2 start */
+  .picked {
+    display: flex;
+    gap: 106px;
+    margin-bottom: 245px;
+
+  }
+
+  .picked img {
+    width: 550px;
+    text-align: center;
+
+  }
+
+  .picked p {
+    color: #fff;
+
+  }
+
+  .picked-you {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  .picked-you p {
+    text-align: center;
+    margin-bottom: 62px;
+  }
+
+  .displayNone {
+    display: block;
+    width: 170px;
+  }
+
+  .picked-home {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+
+  .picked-home img {
+    width: 572px;
+  }
+
+  .picked-home p {
+    text-align: center;
+    margin-bottom: 62px;
+
+  }
+
+  .rock-display {
+    display: none;
+  }
+
+  /* step2 end */
+  /* step2-selected start */
+
+  .rock-selected {
+    display: block;
+  }
+
+  /* step2-selected end */
+  /* step3-win start */
+
+  .resultPage-picked {
+    width: 931px;
+    margin-inline: -210px;
+  }
+
+  .result-desktop {
+    display: block;
+    width: 450px;
+    text-align: center;
+    margin-top: 140px;
+  }
+
+  .result-desktop h1{
+    margin-bottom: 20px;
+    color: white;
+    font-size: 56px;
+  }
+
+  .result-mobile {
+    display: none;
+  }
+
+  .rulePage{
+    background-color: white;
+  }
+
+  body .rulePage {
+    background-color: aqua;
+  }
+
+  .rulePage {
+    background-color: white;
+  }
+
+}
