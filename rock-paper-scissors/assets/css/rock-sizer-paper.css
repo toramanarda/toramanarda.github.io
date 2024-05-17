@@ -65,6 +65,11 @@ body {
   background-color: #1d3151;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
 /* MOBIL VERS START */
 /* index start */
 .container {
@@ -90,7 +95,7 @@ body {
 }
 
 .header-content p {
-  width: 83px;
+  width: 84px;
   font-size: 21px;
   font-weight: 700;
   line-height: 16px;
@@ -317,7 +322,7 @@ button {
   }
 
   .header-content p {
-    width: 83px;
+    width: 84px;
     font-size: 21px;
     font-weight: 700;
     line-height: 16px;
@@ -484,7 +489,7 @@ button {
   .result-desktop h1 {
     margin-bottom: 20px;
     color: white;
-    font-size: 56px;
+    font-size: 52px;
 
   }
 
