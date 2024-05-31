@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROCK PAPER SCISSORS</title>
+  <link rel="stylesheet" href="/rockPaperScissors/assets/css/rock-paper-scissors.css">
+  <script src="/rockPaperScissors/assets/js/rockPaperScissors.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div class="header-content">
+        <p><a href="/rockPaperScissors/index.html">ROCK PAPER SCISSORS</a></p>
+      </div>
+      <div class="score-area">
+        <div class="score-content">
+          <h4>SCORE</h4>
+          <h2 id="score">00</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Header end -->
+
+    <!-- game area start -->
+    <div class="game-area" id="game-area">
+      <div class="paperScissors">
+        <button id="paperChoice"><img src="/rockPaperScissors/assets/img/paper.png" alt="paper" class="paper"></button>
+        <button id="scissorsChoice"><img src="/rockPaperScissors/assets/img/scissors.png" alt="scissors" class="scissors"></button>
+      </div>
+      <div class="rock">
+        <button id="rockChoice"><img src="/rockPaperScissors/assets/img/rock.png" alt="rock"></button>
+      </div>
+      <img src="/rockPaperScissors/assets/img/triangle.png" alt="" class="triangle">
+    </div>
+
+    <!-- result area start -->
+    <div class="result-area">
+      <h2 id="result"></h2>
+      <div class="choices">
+        <img id="user-choice-img" src="" alt="">
+        <img id="computer-choice-img" src="" alt="">
+      </div>
+    </div>
+    <!-- result area end -->
+
+    <!-- rules start -->
+    <div class="rules">
+      <a href="/rockPaperScissors/modal.html">R U L E S</a>
+    </div>
+    <!-- rules end -->
+
+  </div>
+</body>
+
+</html>

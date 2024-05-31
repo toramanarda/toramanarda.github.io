@@ -1,0 +1,539 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+body {
+  background-color: #C5E4E7;
+  font-family: "Space Mono", monospace;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+/* Logo Start */
+
+.logo {
+  width: 88px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+/* Logo End */
+
+/* Hero Start */
+
+.hero {
+  background-color: #fff;
+  border-radius: 25px 25px 0px 0px;
+  padding-bottom: 32px;
+}
+
+/* Bill Area Start */
+
+.bill {
+  margin: 0 auto;
+  width: 311px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.bill h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  padding-bottom: 6px;
+  text-align: left;
+  color: #5E7A7D;
+}
+
+.bill-input input {
+  font-size: 24px;
+  padding: 10px;
+  font-weight: 700;
+  line-height: 35.54px;
+  background-color: #F3F9FA;
+  border: none;
+  text-align: right;
+  padding-right: 17px;
+  width: 311px;
+
+
+}
+
+.selectPeople {
+  background-image: url("/tipCalc-app/assets/img/user.svg");
+  background-repeat: no-repeat;
+  background-position: 17px, 350px, 16px, 19px;
+  cursor: pointer;
+}
+
+.number-of-people input:hover {
+  border: solid#26C2AE;
+
+}
+
+
+
+.bill-input input::placeholder {
+  color: #00474B;
+}
+
+/* Bill Area End */
+
+/* Select Tip Area Start */
+
+.select-tip-area {
+  margin: 0 auto;
+  width: 311px;
+  padding-bottom: 32px;
+}
+
+.select-tip-area h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  padding-bottom: 16px;
+  text-align: left;
+  color: #5E7A7D;
+}
+
+.select-tip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.select-tip button {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+  text-align: center;
+  width: 146px;
+  color: #FFFFFF;
+  background-color: #00474B;
+  border-radius: 10px;
+}
+
+.select-tip button:hover {
+  background-color: #26C2AE;
+  color: #00474B;
+}
+
+.select-tip input {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+  text-align: right;
+  padding-inline: 17px;
+  border: none;
+  width: 146px;
+  color: #547878;
+  background-color: #F3F9FA;
+}
+
+/* Select Tip Area End */
+
+/* Number Of People Area Start */
+
+.number-of-people-area {
+  width: 311px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+.number-of-people-area h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  text-align: left;
+  color: #5E7A7D;
+  padding-bottom: 6px;
+}
+
+.number-of-people input {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+  text-align: right;
+  width: 311px;
+  border: none;
+  background-color: #F3F9FA;
+}
+
+.number-of-people input::placeholder {
+  color: #00474B;
+  padding-right: 16px;
+}
+
+/* Number Of People Area End */
+
+/* Result Area Start */
+
+.result {
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 327px;
+  background-color: #00474B;
+}
+
+.tip-area {
+  padding-top: 37px;
+  padding-bottom: 32px;
+  padding-inline: 22px;
+  width: 281px;
+}
+
+.person-tip-area {
+  display: flex;
+  margin: 0 auto;
+  width: 281px;
+  gap: 87px;
+  padding-bottom: 20px;
+}
+
+.tip-amount {
+  width: 98px;
+}
+
+.tip-amount h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  text-align: left;
+  color: #fff;
+}
+
+.tip-amount p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 19.25px;
+  text-align: left;
+  color: #7F9D9F;
+}
+
+.person-tip {
+  width: 96px;
+}
+
+.person-tip h1 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 47.39px;
+  letter-spacing: -0.6666666865348816px;
+  text-align: right;
+  color: #26C2AE;
+}
+
+.person-total-area {
+  display: flex;
+  margin: 0 auto;
+  width: 281px;
+  gap: 87px;
+  padding-bottom: 20px;
+}
+
+.total {
+  width: 98px;
+}
+
+.total h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  text-align: left;
+  color: #fff;
+}
+
+.total p {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 19.25px;
+  text-align: left;
+  color: #7F9D9F;
+}
+
+.person-total {
+  width: 115px;
+}
+
+.person-total h1 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 47.39px;
+  letter-spacing: -0.6666666865348816px;
+  text-align: right;
+  color: #26C2AE;
+}
+
+.reset {
+  width: 281px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.reset button {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29.62px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  width: 281px;
+  background-color: #26C2AE;
+  color: #00474B;
+  padding: 9px 32px;
+}
+
+/* Result Area End */
+
+/* Hero End */
+
+.bill-input input:hover {
+  border: solid #26C2AE;
+}
+
+.select-tip input:hover {
+  border: solid #26C2AE;
+
+}
+
+
+/* Desktop Version Start */
+
+@media(width >=1110px) {
+
+  /* Logo Start */
+
+  .logo {
+    width: 88px;
+    margin: 0 auto;
+    padding-top: 163px;
+    padding-bottom: 87px;
+  }
+
+  /* Logo End */
+
+  /* Hero Start */
+
+  .hero {
+    margin: 0 auto;
+    width: 920px;
+    background-color: #fff;
+    border-radius: 25px;
+    margin-bottom: 239px;
+    display: flex;
+    gap: 48px;
+  }
+
+  .first-box {
+    width: 379px;
+  }
+
+  /* Bill Area Start */
+
+  .bill {
+    margin: 0 auto;
+    width: 379px;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    padding-inline: 48px;
+  }
+
+  /* Bill Area End */
+
+  /* Select Tip Area Start */
+
+  .select-tip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 14px;
+    grid-row-gap: 16px;
+  }
+
+  .select-tip-area {
+    margin: 0 auto;
+    width: 379px;
+    padding-bottom: 40px;
+    padding-inline: 48px;
+  }
+
+  .select-tip button {
+    border-radius: 10px;
+    width: 117px;
+  }
+
+  .select-tip input {
+    width: 117px;
+  }
+
+
+
+  /* Select Tip Area End */
+
+  /* Number Of People Area Start */
+
+  .number-of-people-area {
+    width: 379px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+    padding-inline: 48px;
+  }
+
+  .number-of-people input {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35.54px;
+    text-align: right;
+    width: 379px;
+    padding-block: 6px;
+    border: none;
+    background-color: #F3F9FA;
+  }
+
+  /* Number Of People Area End */
+
+  /* Result Start */
+
+  .second-box {
+    padding-top: 32px;
+  }
+
+  .result {
+    width: 413px;
+    margin-left: 48px;
+  }
+
+  .tip-area {
+    padding-inline: 40px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .person-tip-area {
+    padding-bottom: 25px;
+  }
+
+  .person-tip {
+    width: 143px;
+  }
+
+  .person-tip h1 {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 71.09px;
+    letter-spacing: -1px;
+    text-align: right;
+    color: #26C2AE;
+  }
+
+  .person-total {
+    width: 172px;
+  }
+
+  .person-total h1 {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 71.09px;
+    letter-spacing: -1px;
+    text-align: right;
+    color: #26C2AE;
+  }
+
+  .reset {
+    width: 333px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+
+  .reset button {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29.62px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    width: 333px;
+    background-color: #26C2AE;
+    color: #00474B;
+    padding: 9px 40px;
+  }
+
+  .reset button:hover {
+    background-color: #9FE8DF;
+  }
+
+
+  .bill-input input {
+    width: 379px;
+  }
+
+  /* Hero End */
+
+}

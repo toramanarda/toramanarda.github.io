@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splitter Tip Calc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/tipCalc-app/assets/css/tipCalc.css">
+  <script src="/tipCalc-app/assets/js/tipCalc.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="/tipCalc-app/assets/img/splitter.svg" alt="">
+    </div>
+    <div class="hero">
+      <div class="first-box">
+        <div class="bill">
+          <h3>Bill</h3>
+          <p class="billAlert"></p>
+          <div class="bill-input-box">
+            <div class="bill-input">
+              <input class="bill" type="number" placeholder="0">
+            </div>
+          </div>
+        </div>
+        <div class="select-tip-area">
+          <h3>Select Tip %</h3>
+          <div class="select-tip">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <form class="customform">
+              <input type="number" placeholder="Custom" required class="customTips">
+            </form>
+          </div>
+        </div>
+        <div class="number-of-people-area">
+          <h3>Number of People</h3>
+          <p class="personAlert"></p>
+          <div class="number-of-people">
+            <input type="number" class="selectPeople" required placeholder="0">
+          </div>
+        </div>
+      </div>
+      <div class="second-box">
+        <div class="result">
+          <div class="tip-area">
+            <div class="person-tip-area">
+              <div class="tip-amount">
+                <h2>Tip Amount</h2>
+                <p>/ person</p>
+              </div>
+              <div class="person-tip">
+                <h1 class="amountTip">₺0.00</h1>
+              </div>
+            </div>
+            <div class="person-total-area">
+              <div class="total">
+                <h2>Total</h2>
+                <p>/ person</p>
+              </div>
+              <div class="person-total">
+                <h1 class="totalTip">₺0.00</h1>
+              </div>
+            </div>
+          </div>
+          <div class="reset">
+            <button class="resetBtn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
