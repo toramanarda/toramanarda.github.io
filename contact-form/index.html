@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us Form</title>
+  <link rel="stylesheet" href="/contact-form/assets/css/contact-us.css">
+  <script src="/contact-form/assets/js/contact-us.js" defer></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="formArea">
+      <form id="contactForm">
+        <div class="name-surname">
+          <p>
+            <label>First Name *
+              <input class="firstname" required type="text">
+            </label>
+          </p>
+          <p>
+            <label>Last Name *
+              <input class="lastname" required type="text">
+            </label>
+          </p>
+        </div>
+        <p>
+          <label>Email Address * <br>
+            <input required type="email" class="emailInput">
+          </label>
+        </p>
+        <div class="queryType">
+          <p>
+            <label>Query Type * <br>
+              <div class="queryTxt">
+                <div class="query">
+                  <p><input type="radio" name="queryType" class="queryType" value="General Enquiry" required>General
+                  Enquiry</p>
+                </div>
+                <div class="query">
+                  <p><input type="radio" name="queryType" class="queryType" value="Support Request" required> Support
+                    Request</p>
+                </div>
+              </div>
+            </label>
+          </p>
+        </div>
+        <p>
+          <label>Message *
+            <textarea required rows="4" cols="50" class="messageBox"></textarea>
+          </label>
+        </p>
+        <label class="checkbox">
+          <p class="consentCheckbox">
+            <input required type="checkbox" class="consentCheckboxInput">
+            I consent to being
+            contacted by the team *
+          </p>
+        </label>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </div>
+    <div id="resultTableContainer">
+      <div id="resultTable"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">
+    <div class="toast-content">
+      <span class="toast-icon"></span>
+      <span class="toast-message"><img src="/assets/img/sent.svg" alt=""> Message Sent!</span>
+      <p>Thanks for completing the form. We’ll be in touch soon!</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
