@@ -120,7 +120,6 @@ label input[type="checkbox"] {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 90%;
-  /* Genişlik yüzdeye çevrildi */
   max-width: 400px;
   z-index: 1000;
 }
