@@ -1,0 +1,343 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+* {
+  margin: 0;
+}
+
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.card-area {
+  background-image: url(/interactive-card-details-form/assets/img/background-color-mobile.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 32px;
+  height: 240px;
+}
+
+.gray-card {
+  background-image: url(/interactive-card-details-form/assets/img/gray-card.png);
+  background-repeat: no-repeat;
+  margin-left: 73px;
+  height: 157px;
+}
+
+.gray-card p {
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 11.48px;
+  letter-spacing: 1.2857142686843872px;
+  padding: 75px;
+  padding-left: 205px;
+  color: #fff;
+}
+
+.rainbow-card {
+  background-image: url(/interactive-card-details-form/assets/img/rainbow-card.png);
+  background-repeat: no-repeat;
+  margin-left: 16px;
+  margin-top: -63px;
+  height: 157px;
+}
+
+.rainbow-card p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.97px;
+  letter-spacing: 2.200000047683716px;
+  padding-top: 84px;
+  padding-left: 19px;
+  color: #fff;
+}
+
+.rainbow-card-secure {
+  display: flex;
+  padding-top: 7px;
+  padding-left: 19px;
+  gap: 124px;
+}
+
+.rainbow-card-secure h6 {
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 11.48px;
+  letter-spacing: 1.2857142686843872px;
+  color: #fff;
+}
+
+.card-form-area {
+  margin: 0 auto;
+  width: 327px;
+  padding-top: 70px;
+}
+
+.card-form-area h2 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.31px;
+  letter-spacing: 2px;
+  padding-bottom: 9px;
+  text-align: left;
+  color: #21092F;
+}
+
+.card-form-area input {
+  width: 327px;
+  border: 1px solid #DFDEE0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-block: 11px;
+}
+
+.card-form-area input::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.97px;
+  opacity: 25%;
+  padding-left: 16px;
+  text-align: left;
+  color: #21092F;
+}
+
+.card-date-area {
+  display: flex;
+  gap: 8px;
+}
+
+.card-date-area input {
+  width: 72px;
+}
+
+.card-date-area input:last-child {
+  width: 164px;
+}
+
+.confirm-button {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.97px;
+  text-align: center;
+  color: #fff;
+  background-color: #21092F;
+}
+
+.last-use-date {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.thankYou {
+  margin-top: 50px;
+  font-family: "Space Grotesk";
+}
+
+.thankYou img {
+  margin-bottom: 20px;
+  margin-inline: 150px;
+}
+
+.thankYou h1 {
+  margin-bottom: 16px;
+  width: 250px;
+  color: #21092F;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 35.73px;
+  letter-spacing: 3.42px;
+  align-items: center;
+  margin-inline: 100px;
+}
+
+.thankYou p {
+  width: 270px;
+  color: #8F8694;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  align-items: center;
+  margin-bottom: 48px;
+  margin-inline: 70px;
+}
+
+.thankYou input {
+  width: 330px;
+  padding: 15px 118px;
+  border-radius: 10px;
+  border: none;
+  margin-inline: 20px ;
+}
+
+.continueBtn{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.97px;
+  text-align: center;
+  color: #fff;
+  background-color: #21092F;
+}
+@media (width >=1100px) {
+  .container {
+    display: flex;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 350px;
+    margin-right: 600px;
+  }
+
+  .card-area {
+    background-image: url(/interactive-card-details-form/assets/img/backgroundDesktop.png);
+    background-repeat: no-repeat;
+    background-repeat: repeat;
+    height: 900px;
+    width: 483px;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .rainbow-card {
+    background-image: url(/interactive-card-details-form/assets/img/rainbow-desktop.png);
+    background-repeat: no-repeat;
+    height: 245px;
+    position: relative;
+    top: -10px;
+    left: 120px;
+  }
+
+  .rainbow-card p {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 35.73px;
+    letter-spacing: 3.422222137451172px;
+    text-align: left;
+    padding-top: 140px;
+    padding-left: 19px;
+    color: #fff;
+  }
+
+
+
+  .rainbow-card-secure h6 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.86px;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+
+  .gray-card {
+    background-image: url(/interactive-card-details-form/assets/img/desktopGraycard.png);
+    background-repeat: no-repeat;
+    height: 245px;
+    position: relative;
+    top: 450px;
+    left: 200px;
+  }
+
+  .gray-card p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.86px;
+    letter-spacing: 2px;
+    text-align: right;
+    padding-top: 113px;
+    padding-left: 300px;
+    color: #fff;
+  }
+
+  .thankYou {
+    position: relative;
+    left: 1000px;
+    bottom: 150px;
+  }
+
+  .thankYou img {
+    margin-bottom: 20px;
+    margin-inline: 150px;
+  }
+
+  .thankYou h1 {
+    margin-bottom: 16px;
+    width: 250px;
+    color: #21092F;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 35.73px;
+    letter-spacing: 3.42px;
+    align-items: center;
+    margin-inline: 100px;
+  }
+
+  .thankYou p {
+    width: 270px;
+    color: #8F8694;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    margin-bottom: 48px;
+    margin-inline: 70px;
+  }
+
+  .thankYou input {
+    width: 380px;
+    padding: 15px 151px;
+    border-radius: 10px;
+    border: none;
+    margin-inline: 20px ;
+  }
+
+  .continueBtn{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    text-align: center;
+    color: #fff;
+    background-color: #21092F;
+  }
+}

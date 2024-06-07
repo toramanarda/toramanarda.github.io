@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Card Details Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/interactive-card-details-form/assets/css/interactive-card-details-form.css">
+  <script src="/interactive-card-details-form/assets/js/interactive-card-details-form.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="first-content">
+      <div class="card-area">
+        <div class="gray-card">
+          <p class="cvv">000</p>
+        </div>
+        <div class="rainbow-card">
+          <p class="cardNumber">0000 0000 0000 0000</p>
+          <div class="rainbow-card-secure">
+            <h6 class="name">JANE APPLESEED</h6>
+            <div class="last-use-date">
+              <h6 class="month">00</h6>
+              <h6>/</h6>
+              <h6 class="years">00</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="last-content">
+      <div class="card-form-area">
+        <form required>
+          <h2>CARDHOLDER NAME</h2>
+          <input required type="text" placeholder="e.g. Jane Appleseed" class="nameInput">
+          <h2>CARD NUMBER</h2>
+          <input required type="number" placeholder="e.g. 1234 5678 9123 0000" class="cardNumberInput">
+          <h2>EXP. DATE (MM/YY) &nbsp; CVC</h2>
+          <div class="card-date-area">
+            <input required type="number" placeholder="MM" class="monthInput">
+            <input required type="number" placeholder="YY" class="yearsInput">
+            <input required type="number" placeholder="e.g. 123" class="cvvInput">
+          </div>
+          <input required type="submit" class="confirm-button" value="Confirm">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
