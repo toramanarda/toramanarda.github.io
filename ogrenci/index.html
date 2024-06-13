@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Öğrenci Not Sistemi</title>
+  <script src="/assets/js/ogrenci.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Öğrenci Not Sistemi</h1>
+    <form id="studentForm">
+      <input type="text" id="name" placeholder="Öğrenci Adı" required>
+      <input type="text" id="lastname" placeholder="Öğrenci Soyadı" required>
+      <input type="text" id="section" placeholder="Bölüm" required>
+      <input type="number" id="midterm1" placeholder="1. Vize Notu" required>
+      <input type="number" id="midterm2" placeholder="2. Vize Notu" required>
+      <input type="number" id="final" placeholder="Final Notu" required>
+      <button type="submit">Öğrenci Ekle</button>
+    </form>
+    <button id="clearStorage">Tüm Verileri Sil</button>
+    <h2>Tüm Öğrenciler</h2>
+    <div id="allStudents"></div>
+    <h2>Bölümlere Göre Öğrenciler</h2>
+    <div id="sections"></div>
+  </div>
+
+</body>
+
+</html>
