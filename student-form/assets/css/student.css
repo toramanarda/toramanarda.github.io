@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {font-family: system-ui;}
+
+.container {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.form-group {margin-bottom: 5px;}
+
+.error-message {
+    display: none;
+    color: red;
+}
+
+input, select, textarea {
+    border: 1px solid lightslategray;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+.validated .form-group:has(:invalid) .error-message { display: block; }
+.validated .form-group:has(:invalid) :is(input, textarea) { border-color: red; }
+.validated .form-group:has(:invalid) label { color: red; }
+
+.radio-group {
+    display: flex;
+    gap: 5px;
+}
+
+.radio-group label {
+    flex-grow: 1;
+    flex-shrink: 0;
+    border: 1px solid lightslategray;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.radio-group label:has(:checked) {
+    background-color: lightskyblue;
+}
+
+.container {
+    width: 400px;
+    margin-inline: auto;
+}
+
+.contact-form {
+    margin-bottom: 40px;
+}
+
+.students {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    gap: 10px;
+}
+
+.student {
+    background-color: lightgoldenrodyellow;
+    padding: 5px;
+    border-radius: 4px;
+    color: darkturquoise;
+}
+
+.student a {
+    text-decoration: none;
+    color: darkolivegreen;
+}

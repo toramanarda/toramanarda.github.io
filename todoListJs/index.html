@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TodoAppJs</title>
+  <link rel="stylesheet" href="/todoListJs/assets/css/todoAppJs.css">
+  <script src="/todoListJs/assets/js/todoAppJs.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="title">
+        <img src="/assets/img/logo.svg" alt="">
+        <img src="/assets/img/theme.svg" alt="">
+      </div>
+      <form class="todoForm">
+        <input type="text" name="todo" id="todo" autocomplete="off" required placeholder="Create a new todo…">
+        <button class="submit" name="submit" id="submit" type="submit">Gönder</button>
+      </form>
+    </div>
+    <div class="hero">
+      <div class="todos"></div>
+        <div class="todos-end">
+          <div class="todos-end-area">
+            <p class="todoCount">0 items left</p>
+            <button class="clear">Clear Completed</button>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>

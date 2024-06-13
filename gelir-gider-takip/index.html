@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/gelir-gider-takip.css">
+  <script src="/assets/js/gelir-gider-takip.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <form class="income-expense">
+      <div class="description">
+        <label for="description">Açıklama Giriniz</label>
+        <input type="text" name="description" id="description">
+      </div>
+
+      <div class="amount">
+        <label for="amount">Miktar Giriniz</label>
+        <input type="number" name="amount" id="amount">
+      </div>
+
+      <div class="desicion">
+        <select name="desicion" id="desicion">
+          <option value="income">GELİR</option>
+          <option value="expense">GİDER</option>
+        </select>
+      </div>
+      <div class="button">
+        <button name="submit" id="submit" type="submit">Ekle</button>
+      </div>
+    </form>
+    <button class="clear">Sil</button>
+
+    <div class="income">
+      <h1>Gelirler</h1>
+      <div class="income-list"></div>
+    </div>
+
+    <div class="total-income"></div>
+
+
+    <div class="expense">
+      <h1>Giderler</h1>
+      <div class="expense-list"></div>
+    </div>
+
+    <div class="total-expense"></div>
+
+    <div class="total"></div>
+  </div>
+</body>
+
+</html>

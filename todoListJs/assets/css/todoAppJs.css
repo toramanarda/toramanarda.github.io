@@ -1,0 +1,274 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #161721;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #671A7D;
+  /* background-image: url(/assets/img/mobile-background.jpg);
+  background-repeat: no-repeat; */
+}
+
+.title {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 24px 40px 26px;
+  width: 325px;
+}
+
+.todoForm {
+  margin: 0 auto;
+  display: flex;
+  width: 327px;
+  padding-bottom: 44px;
+}
+
+.todoForm input {
+  padding-block: 14px;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -0.1666666716337204px;
+  border: 1px solid #25273D;
+  background-color: #25273D;
+  color: #767992;
+  width: 327px;
+}
+
+.todoForm input::placeholder {
+  padding: 14px 171px 14px 20px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -0.1666666716337204px;
+  color: #767992;
+  width: 136px;
+}
+
+.hero {
+  margin: 0 auto;
+  position: relative;
+  margin-top: -28px;
+  border-radius: 10px;
+  width: 327px;
+  background-color: #25273D;
+}
+
+.todos-list ul {
+  border-bottom: 2px solid #393A4B;
+}
+
+.todos-list ul:last-child {
+  border-bottom: none;
+}
+
+.todos-list li {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -0.1666666716337204px;
+  text-align: left;
+  color: #C8CBE7;
+  padding: 16px 20px;
+}
+
+.todos-end {
+  border-top: 2px solid #393A4B;
+  padding: 16px 20px 20px 20px;
+}
+
+.todos-end-area {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 287px;
+}
+
+.todos-end-area p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -0.1666666716337204px;
+  text-align: left;
+  color: #5B5E7E;
+}
+
+.todos-end-area button {
+  color: #5B5E7E;
+  background-color: #25273D;
+  border: 1px solid #25273D;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -0.1666666716337204px;
+  width: 100px;
+}
+
+.submit {
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 1px solid #25273D;
+  background-color: #25273D;
+}
+
+@media(width >=1100px) {
+  .title {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 24px 40px 26px;
+    width: 540px;
+  }
+
+  .todoForm {
+    margin: 0 auto;
+    width: 540px;
+    padding-bottom: 44px;
+  }
+
+  .todoForm input {
+    padding-block: 14px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: -0.1666666716337204px;
+    background-color: #25273D;
+    color: #767992;
+    width: 540px;
+  }
+
+  .todoForm input::placeholder {
+    padding: 14px 171px 14px 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: -0.1666666716337204px;
+    color: #767992;
+    width: 136px;
+  }
+
+  .hero {
+    margin: 0 auto;
+    position: relative;
+    margin-top: -28px;
+    border-radius: 10px;
+    width: 540px;
+    background-color: #25273D;
+  }
+
+  .todos-list ul {
+    border-bottom: 2px solid #393A4B;
+  }
+
+  .todos-list ul:last-child {
+    border-bottom: none;
+  }
+
+  .todos-list li {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: -0.1666666716337204px;
+    text-align: left;
+    color: #C8CBE7;
+    padding: 16px 20px;
+  }
+
+  .todos-end {
+    border-top: 2px solid #393A4B;
+    padding: 16px 20px 20px 20px;
+  }
+
+  .todos-end-area {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 287px;
+  }
+
+  .todos-end-area p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: -0.1666666716337204px;
+    text-align: left;
+    color: #5B5E7E;
+  }
+
+  .todos-end-area button {
+    color: #5B5E7E;
+    background-color: #25273D;
+    border: 1px solid #25273D;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: -0.1666666716337204px;
+    width: 100px;
+  }
+}
