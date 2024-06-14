@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Sayfası</title>
+    <script src="/assets/js/blog.js" defer></script>
+</head>
+<body>
+    <h1>Blog Sayfası</h1>
+    
+    <form id="blogForm">
+        <label for="title">Başlık:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="description">Açıklama:</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        <label for="author">Yazar Bilgisi:</label><br>
+        <input type="text" id="author" name="author"><br>
+        <label for="category">Kategori:</label><br>
+        <select id="category" name="category">
+            <option value="Teknoloji">Teknoloji</option>
+            <option value="Moda">Moda</option>
+            <option value="Seyahat">Seyahat</option>
+            <option value="Yemek">Yemek</option>
+            <option value="Fitness">Fitness</option>
+        </select><br>
+        <button type="submit">Gönder</button>
+    </form>
+    
+    <h2>Tüm Blog Yazıları</h2>
+    <ul id="allPosts"></ul>
+    
+    <h2>Kategorilere Göre Yazılar</h2>
+    <ul id="categoryPosts"></ul>
+
+    <button id="clearLocalStorage">LocalStorage'i Temizle</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
