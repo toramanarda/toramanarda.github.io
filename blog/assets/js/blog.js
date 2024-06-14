@@ -3,12 +3,10 @@ let allPosts = document.querySelector('#allPosts');
 let categoryPosts = document.querySelector('#categoryPosts');
 let clearLocalStorageBtn = document.querySelector('#clearLocalStorage');
 
-// LocalStorage'dan verileri al
 let getPostsFromLocalStorage = () => {
   return JSON.parse(localStorage.getItem('blogPosts')) || [];
 };
 
-// LocalStorage'a verileri kaydet
 let savePostsToLocalStorage = (posts) => {
   localStorage.setItem('blogPosts', JSON.stringify(posts));
 };
@@ -26,14 +24,12 @@ let displayPosts = () => {
     let listItem = `${post.title} - ${post.author}<br>`;
     allPosts.innerHTML += listItem;
 
-    // Kategoriye göre ayrı listeler oluştur
     if (!(post.category in categoryLists)) {
       categoryLists[post.category] = [];
     }
     categoryLists[post.category].push(`<li>${post.title} - ${post.author}</li>`);
   }
 
-  // Kategorilere göre başlıklar ve yazılarını ekle
   for (let category in categoryLists) {
     let categoryHTML = `<h3>${category.toUpperCase()}</h3><ul>`;
     for (let i = 0; i < categoryLists[category].length; i++) {
@@ -44,7 +40,6 @@ let displayPosts = () => {
   }
 };
 
-// Form gönderimini dinle
 blogForm.addEventListener('submit', function (event) {
   event.preventDefault();
 
@@ -64,11 +59,9 @@ blogForm.addEventListener('submit', function (event) {
   this.reset();
 });
 
-// LocalStorage'ı temizle
 clearLocalStorageBtn.addEventListener('click', function () {
   localStorage.removeItem('blogPosts');
   displayPosts();
 });
 
-// Sayfa yüklendiğinde blogları listele
 displayPosts();
