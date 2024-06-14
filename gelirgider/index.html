@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gelir Gider</title>
+  <script src="assets/js/gelirgider.js" defer></script>
+</head>
+<body>
+  <form class="gelirgider">
+    
+    <div class="gelir">
+      <label class="gelir">Gelir Miktarınız: </label>
+      <input type="number" name="gelir" placeholder="Gelir Miktarı">
+      <button class="geliradd">Gelir Ekle</button>
+    </div>
+
+    <div class="gider">
+      <label class="gider">Gider Miktarınız: </label>
+      <input type="number" name="gider" placeholder="Gider Miktarı">
+      <button class="gideradd">Gider Ekle</button>
+    </div>
+    <button class="delete">Sıfırla</button>
+  </form>
+
+  <div class="gelirTable">
+    <h3>Gelir Listesi</h3>
+    <div class="gelirList"></div>
+    <div class="gelirListTotal">Toplam Gelir: <span id="gelirToplam"></span></div>
+  </div>
+
+  <div class="giderTable">
+    <h3>Gider Listesi</h3>
+    <div class="giderList"></div>
+    <div class="giderListTotal">Toplam Gider: <span id="giderToplam"></span></div>
+  </div>
+
+  <div class="karZarar">
+    <h3>Kar/Zarar</h3>
+    <div class="karZararSonuc">Kar/Zarar: <span id="karZararToplam"></span></div>
+  </div>
+
+</body>
+</html>
