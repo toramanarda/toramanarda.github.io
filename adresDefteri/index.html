@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/adresDefteri/assets/css/adresForm.css">
+  <script src="/adresDefteri/assets/js/adres.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <form class="contact-form">
+      <H1>ADRES DEFTERİ</H1>
+      <div class="name">
+        <label for="Ad">Adınız</label> <br>
+        <input name="ad" id="ad" type="text">
+      </div>
+
+      <div class="surname">
+        <label for="Soyad">Soyadınız</label> <br>
+        <input name="soyad" id="soyad" type="text">
+      </div>
+
+      <div class="phone">
+        <label for="e-posta">Telefon Numaranız</label> <br>
+        <input name="phone" id="phone" type="tel">
+      </div>
+
+      <div class="message">
+        <label for="mesaj">Adresiniz</label> <br>
+        <textarea name="message" id="massage" cols="38" rows="5"></textarea>
+      </div>
+      <div class="button">
+        <button name="submit" id="submit" type="submit">Gönder</button>
+      </div>
+    </form>
+    <button class="clear">Localstorageyi Sil</button>
+    <div class="print"></div>
+  </div>
+</body>
+
+</html>
