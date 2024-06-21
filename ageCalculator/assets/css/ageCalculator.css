@@ -1,0 +1,253 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #F0F0F0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.main {
+  width: 343px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 24px 24px 100px 24px;
+  padding: 48px 24px 48px 24px;
+  margin-top: 88px;
+}
+
+.date {
+  margin: 0 auto;
+  display: flex;
+  width: 295px;
+  gap: 16px;
+}
+
+.date p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.25em;
+  padding-bottom: 4px;
+  text-align: left;
+  color: #716F6F;
+}
+
+.date input {
+  border: 1px solid #DCDCDC;
+  padding: 12px 45px 12px 16px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  width: 87px;
+}
+
+.date input:last-child {
+  padding-right: 1px;
+}
+
+.icon {
+  margin: 0 auto;
+  width: 295px;
+  padding-bottom: 63px;
+  position: relative;
+}
+
+.icon-area button {
+  width: 64px;
+  height: 64px;
+  border: 1px solid #854DFF;
+  background-color: #854DFF;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  margin-inline: 115px;
+  margin-top: 32px;
+}
+
+.icon-area img {
+  margin: 12px;
+}
+
+.icon hr {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.live-day {
+  margin: 0 auto;
+  width: 295px;
+  padding-top: 32px;
+}
+
+.live-day h2 {
+  font-size: 56px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 61.6px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #854DFF;
+}
+
+.live-day h3 {
+  font-size: 56px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 61.6px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #151515;
+}
+
+.years {
+  display: flex;
+  gap: 8px;
+}
+
+.months {
+  display: flex;
+  gap: 8px;
+}
+
+.days {
+  display: flex;
+  gap: 8px;
+}
+
+/* Desktop Area Start */
+
+@media(width >=1100px) {
+  .main {
+    width: 840px;
+  }
+
+  .date {
+    margin: 0 auto;
+    width: 728px;
+    gap: 32px;
+  }
+
+  .date input {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    width: 160px;
+  }
+
+  .icon {
+    margin: 0 auto;
+    width: 728px;
+    padding-bottom: 63px;
+    position: relative;
+  }
+
+  .icon-area button {
+    width: 96px;
+    height: 96px;
+    margin-left: 632px;
+    margin-top: 12px;
+  }
+
+  .icon-area img {
+    margin: 0 auto;
+    width: 44px;
+  }
+
+  .icon hr {
+    position: absolute;
+    width: 632px;
+  }
+
+  .live-day {
+    margin: 0 auto;
+    width: 728px;
+    padding-top: 47px;
+  }
+
+  .live-day h2 {
+    font-size: 104px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 114.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #854DFF;
+  }
+
+  .live-day h3 {
+    font-size: 104px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 114.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #151515;
+  }
+}
+
+/* Desktop Area End */

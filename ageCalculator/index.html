@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/ageCalculator.css">
+  <script src="./assets/js/ageCalculator.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <form class="dateForm">
+        <div class="date">
+          <div class="day">
+            <p>DAY</p>
+            <input name="day" id="day" type="number">
+          </div>
+          <div class="month">
+            <p>MONTH</p>
+            <input name="month" id="month" type="number">
+          </div>
+          <div class="year">
+            <p>YEAR</p>
+            <input name="year" id="year" type="number">
+          </div>
+        </div>
+        <div class="icon">
+          <div class="icon-area">
+            <button class="click"><img src="./assets/img/icon.svg" alt="icon"></button>
+          </div>
+          <hr>
+        </div>
+      </form>
+      <div class="live-day">
+        <div class="years">
+          <h2 class="outputYear"></h2>
+          <h3>years</h3>
+        </div>
+        <div class="months">
+          <h2 class="outputMonth"></h2>
+          <h3>months</h3>
+        </div>
+        <div class="days">
+          <h2 class="outputDays"></h2>
+          <h3>days</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
