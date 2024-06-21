@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-list,
+.cart-list {
+  margin-top: 20px;
+}
+
+.product-item,
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.total {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.container {
+  width: 370px;
+  margin: 0 auto;
+
+}
+
+h1 {
+  font-weight: 700;
+  color: rgb(184, 50, 205);
+  margin-bottom: 50px;
+  margin-inline: auto;
+}
+
+
+input {
+  display: flex;
+  margin-bottom: 20px;
+  width: 330px;
+}
+
+.productForm{
+  margin: 0 auto;
+  align-items: center;
+  width: 330px;
+
+}
+
+.productForm button{
+  width: 330px;
+  background-color: rgb(184, 50, 205);
+  color: white;
+  border-radius: 6px;
+  border: 1px solid rgb(184, 50, 205);
+  
+}
+
+h2{
+  font-weight: 700;
+  color: rgb(184, 50, 205);
+  margin-bottom: 10px;
+  margin-inline: auto;
+}
+
+.added{
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  margin-top: 50px;
+}
+
+.totalPrice{
+  color: limegreen;
+}
+
+.urunList{
+  border-bottom: 1px solid black;
+}
+
+.urunList button {
+  background-color: rgb(184, 50, 205);
+  color: white;
+}
+
+.secim{
+  margin-block: 20px;
+}

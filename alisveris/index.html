@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alışveriş Sepeti</title>
+  <script src="/alisveris/assets/js/alisveris.js" defer></script>
+  <link rel="stylesheet" href="/alisveris/assets/css/alisveris.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Alışveriş Sepeti</h1>
+
+    <form class="productForm">
+      <label>Ürün İsmi: <input required type="text" name="name" id="product-name"></label>
+      <label>Kategori: <input required type="text" name="category" id="product-category"></label>
+      <label>Renk: <input required type="text" name="color" id="product-color"></label>
+      <label>Fiyat: <input required type="number" name="price" id="product-price"></label>
+      <button>Ekle</button>
+    </form>
+
+    <div class="product-list">
+      <h2>Ürünler Listesi</h2>
+      <div class="products"></div>
+    </div>
+
+    <div class="cart-list">
+      <h2>Alışveriş Sepeti</h2>
+      <div class="cart"></div>
+      <div class="total-amount"></div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
