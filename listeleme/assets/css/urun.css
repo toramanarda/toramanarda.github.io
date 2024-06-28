@@ -1,0 +1,228 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h2{
+  margin-top: 80px;
+  border-top: 1px solid gray;
+
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.productsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-list,
+.cart-list {
+  margin-top: 20px;
+}
+
+.product-item,
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.total {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: 700;
+  color: limegreen;
+  text-align: center;
+}
+
+button {
+  background-color: limegreen;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addProduct:hover {
+  background-color: darkgreen;
+}
+
+#resetBtn {
+  background-color: red;
+}
+
+#resetBtn:hover {
+  background-color: darkred;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.added {
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+}
+
+.added p {
+  margin-bottom: 10px;
+}
+
+.added h4 {
+  color: rgb(39, 84, 39);
+  font-size: 22px;
+}
+
+.totalPrice {
+  color: brown;
+}
+
+.urunList {
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+}
+
+.urunList h4 {
+  color: rgb(39, 84, 39);
+  font-size: 22px;
+}
+
+.productEditControls {
+  display: flex;
+  gap: 10px;
+}
+
+.productEditControls button,
+.productEditControls a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.productEditControls svg {
+  width: 16px;
+  height: 16px;
+  fill: black;
+}
+
+.productEditControls button:hover {
+  background-color: red;
+}
+
+#categoryOptions label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#categoryOptions input {
+  margin-right: 5px;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: wheat;
+}
+
+.productEditControls {
+  display: flex;
+  gap: 10px;
+}
+
+.editBtn,
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.editBtn svg,
+.deleteBtn svg {
+  width: 24px;
+  height: 24px;
+  fill: coral;
+  transition: fill 0.3s;
+}
+
+.editBtn:hover svg,
+.deleteBtn:hover svg {
+  fill: white;
+}
+
+dialog {
+  margin: auto;
+  padding: 10px;
+}
+
+dialog form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

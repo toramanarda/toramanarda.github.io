@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Öğrenci Not Sistemi</title>
+  <link rel="stylesheet" href="./assets/css/ogrenci.css">
+  <script src="./assets/js/ogrenciApp.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Öğrenci Not Sistemi</h1>
+    <button id="addStudentBtn">Yeni Öğrenci Ekle</button>
+    <h2>Tüm Öğrenciler</h2>
+    <div id="allStudents"></div>
+    <h2>Bölümlere Göre Öğrenciler</h2>
+    <div id="sections"></div>
+    <button id="clearStorage">Tüm Verileri Sil</button>
+
+    <dialog id="modal">
+      <h2 class="modalAddNew">Yeni Öğrenci Ekle</h2>
+      <h2 class="modalEdit">Öğrenci Bilgilerini Düzenle</h2>
+      <form id="studentForm" method="dialog">
+        <input type="hidden" name="id">
+        <input type="text" name="name" placeholder="Öğrenci Adı" required>
+        <input type="text" name="lastname" placeholder="Öğrenci Soyadı" required>
+        <input type="text" name="section" placeholder="Bölüm" required>
+        <input type="number" name="midterm1" placeholder="1. Vize Notu" required>
+        <input type="number" name="midterm2" placeholder="2. Vize Notu" required>
+        <input type="number" name="final" placeholder="Final Notu" required>
+        <button class="modalAddNew" type="submit">Ekle</button>
+        <button class="modalEdit" type="submit">Kaydet</button>
+        <button type="button" onclick="studentForm.reset(); modal.close();">Vazgeç</button>
+      </form>
+    </dialog>
+  </div>
+</body>
+
+</html>

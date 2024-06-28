@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Sayfası</title>
+  <script src="./assets/js/blog.js" defer></script>
+  <link rel="stylesheet" href="./assets/css/blog.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Blog Sayfası</h1>
+    <button id="addPostBtn">Yeni Yazı Ekle</button>
+    <h2>Tüm Blog Yazıları</h2>
+    <ul id="allPosts"></ul>
+    <h2>Kategorilere Göre Yazılar</h2>
+    <ul id="categoryPosts"></ul>
+    <button id="clearLocalStorageBtn">Temizle</button>
+    <dialog id="modal">
+      <h2 class="modalAddNew">Yeni Blog Yazısı Ekle</h2>
+      <h2 class="modalEdit">Blog Yazısını Düzenle</h2>
+      <form method="dialog" autocomplete="off" id="blogForm">
+        <p><input required type="text" name="title" placeholder="Başlık"></p>
+        <p><textarea required name="description" placeholder="Açıklama"></textarea></p>
+        <p><input required type="text" name="author" placeholder="Yazar Bilgisi"></p>
+        <p>
+          <select required name="category">
+            <option value="teknoloji">Teknoloji</option>
+            <option value="moda">Moda</option>
+            <option value="seyahat">Seyahat</option>
+            <option value="yemek">Yemek</option>
+            <option value="fitness">Fitness</option>
+          </select>
+        </p>
+        <p><input type="url" name="image" placeholder="Fotoğrafın URL adresini giriniz" required></p>
+        <p>
+          <button class="modalAddNew">Ekle</button>
+          <button class="modalEdit">Kaydet</button>
+          <button type="button" onclick="blogForm.reset(); modal.close();">Vazgeç</button>
+        </p>
+        <input type="hidden" name="id" value="">
+      </form>
+    </dialog>
+  </div>
+</body>
+</html>

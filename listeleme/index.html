@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ürün Listeleme</title>
+  <script src="/assets/js/urun.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/urun.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Ürün Listeleme</h1>
+    <form id="productForm">
+      <input type="text" name="name" id="name" placeholder="Ürün Adı" required>
+      <input type="number" name="price" id="price" placeholder="Ürün Fiyatı" required>
+      <div id="categoryOptions">
+        <label><input type="radio" class="category" name="category" value="Elektronik"> Elektronik</label>
+        <label><input type="radio" class="category" name="category" value="Telefon"> Telefon</label>
+        <label><input type="radio" class="category" name="category" value="Ev"> Ev</label>
+        <label><input type="radio" class="category" name="category" value="Mutfak"> Mutfak</label>
+        <label><input type="radio" class="category" name="category" value="Bilgisayar"> Bilgisayar</label>
+        <label><input type="radio" class="category" name="category" value="Giyim"> Giyim</label>
+        <label><input type="radio" class="category" name="category" value="Mobilya"> Mobilya</label>
+        <label><input type="radio" class="category" name="category" value="Aydınlatma"> Aydınlatma</label>
+      </div>
+      <textarea id="description" name="description" placeholder="Açıklama - Detay" required></textarea>
+      <input type="url" id="image" name="image" placeholder="Fotoğrafın URL adresini giriniz" required>
+      <button type="submit" id="addProduct">Ürün Ekle</button>
+      <button type="button" id="resetBtn">Tüm Verileri Sil</button>
+    </form>
+    <h2>Tüm Ürünler</h2>
+    <div id="allProducts"></div>
+    <div class="toplam">
+      <h3>Toplam:</h3>
+      <span id="sonucToplam"></span>
+    </div>
+    <h2>Kategorilere Göre Ürünler</h2>
+    <div id="categories"></div>
+  </div>
+</body>
+
+</html>
