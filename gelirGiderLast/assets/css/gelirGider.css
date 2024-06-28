@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.gelirgider {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.gelirgider .gelir,
+.gelirgider .gider,
+.gelirgider .delete {
+  margin-bottom: 10px;
+}
+
+.gelirgider input[type="number"] {
+  padding: 5px;
+  width: 150px;
+}
+
+.gelirgider button {
+  padding: 8px 15px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+
+
+.gelirTable,
+.giderTable,
+.karZarar {
+  margin-bottom: 20px;
+}
+
+.gelirTable h3,
+.giderTable h3,
+.karZarar h3 {
+  margin-bottom: 10px;
+}
+
+.gelirList,
+.giderList {
+  border: 1px solid #ccc;
+  width: 500px;
+  padding: 10px;
+}
+
+.gelirListTotal,
+.giderListTotal,
+.karZararSonuc {
+  margin-top: 10px;
+}
+
+
+#modal {
+ 
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 300px;
+}
+
+.delete {
+  width: 500px;
+}
+
+#modal h2 {
+  margin-top: 0;
+}
+
+#editForm p {
+  margin-bottom: 10px;
+}
+
+
+
+#editForm button {
+  margin-right: 10px;
+}
+
+#editForm button:last-child {
+  margin-right: 0;
+}
+
+#editForm button[type="button"] {
+  background-color: #f44336;
+}
+
+#editForm button[type="button"]:hover {
+  opacity: 0.8;
+  background-color: #e53935;
+}
+
+.gelirList a,
+.giderList a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.gelirList a:hover,
+.giderList a:hover {
+  text-decoration: underline;
+}

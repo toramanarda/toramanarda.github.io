@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gelir Gider</title>
+  <script src="/assets/js/gelir-gider.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/gelirGider.css">
+</head>
+<body>
+  <form class="gelirgider">
+    <div class="gelir">
+      <label class="gelir">Gelir Miktarınız: </label>
+      <input type="number" name="gelir" placeholder="Gelir Miktarı">
+      <button class="geliradd">Gelir Ekle</button>
+    </div>
+
+    <div class="gider">
+      <label class="gider">Gider Miktarınız: </label>
+      <input type="number" name="gider" placeholder="Gider Miktarı">
+      <button class="gideradd">Gider Ekle</button>
+    </div>
+    <button class="delete">Sıfırla</button>
+  </form>
+
+  <div class="gelirTable">
+    <h3>Gelir Listesi</h3>
+    <div class="gelirList"></div>
+    <div class="gelirListTotal">Toplam Gelir: <span id="gelirToplam"> </span>TL</div>
+  </div>
+
+  <div class="giderTable">
+    <h3>Gider Listesi</h3>
+    <div class="giderList"></div>
+    <div class="giderListTotal">Toplam Gider: <span id="giderToplam"> </span>TL</div>
+  </div>
+
+  <div class="karZarar">
+    <h3>Kar/Zarar</h3>
+    <div class="karZararSonuc">Kar/Zarar: <span id="karZararToplam"></span></div>
+  </div>
+  <dialog id="modal">
+    <h2 class="modalAddNew">Gelir Ekle</h2>
+    <h2 class="modalEdit">Gelir Düzenle</h2>
+    <h2 class="modalGiderAddNew">Gider Ekle</h2>
+    <h2 class="modalGiderEdit">Gider Düzenle</h2>
+  
+    <form method="dialog" autocomplete="off" id="editForm">
+      <p><input required type="number" name="amount" placeholder="Miktar"></p>
+      <p>
+        <button class="modelAddNew">Ekle</button>
+        <button class="modelEdit">Kaydet</button>
+        <button class="modelGiderAddNew">Ekle</button>
+        <button class="modelGiderEdit">Kaydet</button>
+        <button type="button" onclick="editForm.reset();modal.close();">Vazgeç</button>
+      </p>
+      <input type="hidden" name="id" value="">
+    </form>
+  </dialog>
+  
+</body>
+</html>
