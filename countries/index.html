@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/asesets/css/countries.css">
+  <script src="/asesets/js/countries.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h3>Ülke Listesi</h3>
+    <form id="countriesForm">
+      <ul id="countryList"></ul> 
+    </form>
+
+    <fieldset>
+      <legend>Ülke Ekle</legend>
+      <form id="newCountryForm" class="formInRow">
+        <input required name="name" type="text" placeholder="Ülke Adı">
+        <input required name="population" type="number" placeholder="Ülke Nüfusu">
+        <input required name="flag" type="text" placeholder="Bayrak">
+        <input required name="famousFood" type="text" placeholder="Meşhur Yemeği">
+        <input required name="capitalCity" type="text" placeholder="Bakşent">
+        <button type="submit">Ekle</button>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Ülke Bilgisini Güncelle</legend>
+      <form id="editCountryForm" class="formInRow">
+        <input required name="name" type="text" placeholder="Ülke Adı">
+        <input required name="population" type="number" placeholder="Ülke Nüfusu">
+        <input required name="flag" type="text" placeholder="Bayrak">
+        <input required name="famousFood" type="text" placeholder="Meşhur Yemeği">
+        <input required name="capitalCity" type="text" placeholder="Başkent">
+        <button type="submit">Düzenle</button>
+        <button id="deleteBtn" type="button">Sil</button>
+      </form>
+    </fieldset>
+  </div>
+</body>
+</html>
