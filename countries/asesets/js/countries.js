@@ -201,7 +201,7 @@ function handleDeleteCountry(e) {
   let countryIndex = countries.findIndex(x => x.countryName === formObj.name);
   if (countryIndex > -1) {
     countries.splice(countryIndex, 1);
-    renderCountries(); // Listeyi yeniden render et
+    renderCountries(); 
   } else {
     alert('Bu isimde bir ülke bulunmamaktadır. Kontrol edip tekrar deneyiniz.');
   }
