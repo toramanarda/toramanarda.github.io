@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elektronik Ürünler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/assests/css/products.css">
+  <script src="/assests/js/productss.js" defer></script>
+</head>
+<body>
+  <div class="container">
+   
+    <h3>Ürün Listesi</h3>
+    <form id="salesForm">
+      <ul id="productList"></ul>
+      <p id="odemeTuru">
+        Ödeme Türü
+        <label><input checked required type="radio" name="paymentType" id="paymentType" value="1"> Kredi Kartı</label>
+      </p>
+      <button type="submit">Satış Yap</button>
+    </form>
+
+    <h4>Toplam Satış: <span id="salesTotal">0</span> TL</h4>
+
+    <h3>Stok</h3>
+    
+    <fieldset>
+      <legend>Ürün Ekle</legend>
+      <form id="newProductForm" class="formInRow">
+        <input required name="name" type="text" placeholder="Ürün Adı">
+        <input required name="icon" type="text" placeholder="Emoji">
+        <input required name="price" type="number" placeholder="Fiyat">
+        <input required name="stock" type="number" placeholder="Stok">
+        <input required name="origin" type="text" placeholder="Origin">
+        <input required name="category" type="text" placeholder="Kategori">
+        <button type="submit">Ekle</button>
+      </form>
+    </fieldset> 
+    <fieldset>
+      <legend>Ürün Güncelle</legend>
+      <form id="editProductForm" class="formInRow">
+        <input required name="name" type="text" placeholder="Ürün Adı">
+        <input required name="icon" type="text" placeholder="Emoji">
+        <input required name="price" type="number" placeholder="Fiyat">
+        <input required name="stock" type="number" placeholder="Stok">
+        <input required name="origin" type="text" placeholder="Origin">
+        <input required name="category" type="text" placeholder="Kategori">
+        <button type="submit">Düzenle</button>
+        <button id="deleteBtn" type="button">Sil</button>
+      </form>
+    </fieldset>
+
+  </div>
+</body>
+</html>
