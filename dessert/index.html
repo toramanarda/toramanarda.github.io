@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DESSERTS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/dessert/assets/css/productList.css" />
+  <script src="/dessert/assets/js/productList.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="dessertContainer">
+      <div class="dessert">
+        <h2>Desserts</h2>
+        <div class="productList"></div>
+      </div>
+    </div>
+    <div class="basketCart">
+      <h2> Your Cart (<span id="quantityTotal">0</span>)</h2>
+      <div id="cart"><div id="emptyCartMessage" class="empty-cart">
+        <img src="/dessert/assets/img/emptyImg.png" alt="Empty Cart" />
+        <p>Your added items will appear here</p>
+      </div></div>
+      <div class="orderTotal">
+        <h6>Order Total: <span id="salesTotal">0</span></h6>
+        <p> <img src="/dessert/assets/img/carbon_tree.svg" alt=""> This is a <span id="carbonNeutral">carbon-neutral</span>
+          delivery </p>
+
+      </div>
+
+      <button id="addBtn">Confirm Order</button>
+
+      <dialog id="modal">
+        <img src="/dessert/assets/img/Vector.svg" alt="yesil-tik">
+        <h2>Order Confirmed</h2>
+        <p>We hope you enjoy your food!</p>
+        <div id="modalList">
+        </div>
+        <h6 class="orderSales">Order Total: <span id="orderSalesTotal">0</span></h6>
+        <button id="resetBtn">Start New Order</button>
+      </dialog>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
